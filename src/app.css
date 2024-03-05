@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Outward-Block";
+    src: url("/fonts/outward-block.ttf");
+}
+
+@font-face {
+    font-family: "Humane-SemiBold";
+    src: url("/fonts/Humane-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Humane-Thin";
+    src: url("/fonts/Humane-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Subjectivity-medSlant";
+    src: url("/fonts/Subjectivity-MediumSlanted.otf");
+}
+
+@font-face {
+    font-family: "Subjectivity-regSlant";
+    src: url("/fonts/Subjectivity-RegularSlanted.otf");
+}
+
+body {
+    background-color: #1c1b1e;
+}

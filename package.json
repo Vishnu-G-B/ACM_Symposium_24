@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@types/eslint": "^8.56.0",
 		"autoprefixer": "^10.4.17",
 		"daisyui": "^4.7.2",
@@ -32,6 +33,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"gsap": "^3.12.5"
+		"@lottiefiles/svelte-lottie-player": "^0.3.1",
+		"clsx": "^2.1.0",
+		"embla-carousel-svelte": "^8.0.0",
+		"gsap": "^3.12.5",
+		"svelte-motion": "^0.12.1",
+		"tailwind-merge": "^2.2.1"
 	}
 }
