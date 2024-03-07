@@ -1,13 +1,16 @@
 <div class="z-[6]">
 	<div
-		class="w-fit flex flex-auto font-humaneSemiBold text-onPrimary text-[10rem] tracking-wider pl-4"
+		class="w-fit flex flex-auto font-humaneSemiBold text-onPrimary text-[8rem] sm:text-[10rem] tracking-wider pl-4"
 	>
 		THEMES
 	</div>
 	<div class="pl-4 pr-4 pb-10 -mt-16">
 		<div class="columns gap-1x text">
+			<div class="vertical-line mt-5 sm:mt-0"></div>
 			<div class="rows themes-row">
-				<h4 class="text-onPrimary font-humaneSemiBold text-[8rem] uppercase tracking-wider">
+				<h4
+					class="text-onPrimary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
+				>
 					Ethics
 				</h4>
 				<div class="text-surface -mt-16">
@@ -22,7 +25,7 @@
 				class="rows themes-row align-center"
 			>
 				<h4
-					class=" text-left lg:text-center text-onPrimary font-humaneSemiBold text-[8rem] uppercase tracking-wider"
+					class=" text-left lg:text-center text-onPrimary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
 				>
 					Leadership
 				</h4>
@@ -38,7 +41,7 @@
 				class="rows themes-row align-bottom"
 			>
 				<h4
-					class=" text-left lg:text-right text-onPrimary font-humaneSemiBold text-[8rem] uppercase tracking-wider"
+					class=" text-left lg:text-right text-onPrimary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
 				>
 					Innovation
 				</h4>
@@ -90,9 +93,9 @@
 		align-self: center;
 	}
 	@media screen and (max-width: 991px) {
-        .rows.themes-row {
-            position: static;
-        }
+		.rows.themes-row {
+			position: static;
+		}
 		.rows.themes-row.align-center {
 			position: static;
 		}

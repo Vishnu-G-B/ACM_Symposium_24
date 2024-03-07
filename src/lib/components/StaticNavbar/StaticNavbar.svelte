@@ -1,19 +1,24 @@
 <!-- -top-[36.7%] -->
 
 <script>
+	// @ts-nocheck
+
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
 	let tl;
 	let isActive = false;
 
 	function toggleNav() {
+		const nav = document.getElementById('navbar');
+		let navResetTop = getComputedStyle(nav).top;
+		console.log(navResetTop);
 		const navbar = document.getElementById('navbar');
 		const hamburgerBtn = document.getElementById('hamburger');
 
 		// @ts-ignore
 		if (hamburgerBtn.classList.contains('is-active')) {
 			gsap.to(navbar, {
-				top: '-36.7%',
+				top: "-275.15px",
 				duration: 0.6,
 				ease: 'bounce.out'
 			});
@@ -35,8 +40,8 @@
 	});
 </script>
 
-<div class="fixed -top-[28%]  md:-top-[36.7%] left-0 right-0 z-50" id="navbar">
-	<nav class="w-[23rem] h-[20rem] flex justify-center items-center ml-auto mr-auto relative">
+<div class="fixed -top-[42%] md:-top-[36.7%] left-0 right-0 z-50" id="navbar">
+	<nav class="w-[18rem] sm:w-[23rem] h-[20rem] flex justify-center items-center ml-auto mr-auto relative">
 		<div
 			class="w-full h-[12rem] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[20px] rounded-bl-[20px] bg-primaryContainer
   flex justify-center items-center relative z-50"
@@ -68,7 +73,7 @@
 			</div>
 		</div>
 		<svg
-			class="w-full h-fit absolute top-auto bottom-0 left-0 right-0 z-0"
+			class="w-full h-fit absolute top-auto bottom-[0.5rem] sm:bottom-0 left-0 right-0 z-0"
 			xmlns="http://www.w3.org/2000/svg"
 			width="521"
 			height="170"
@@ -81,10 +86,11 @@
 			/>
 		</svg>
 		<div
-			class="w-fit h-fit absolute top-auto -bottom-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[49]"
+			class="w-fit h-fit absolute top-auto -bottom-[11%] sm:-bottom-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[49]"
 		>
 			<button
-				class="hamburger hamburger--emphatic" class:is-active={isActive}
+				class="hamburger hamburger--emphatic"
+				class:is-active={isActive}
 				type="button"
 				id="hamburger"
 				on:click={toggleNav}
@@ -180,11 +186,11 @@
 	}
 
 	.hamburger:hover {
-		opacity: 0.7;
+		opacity: 1;
 	}
 
 	.hamburger.is-active:hover {
-		opacity: 0.7;
+		opacity: 1;
 	}
 
 	/* Added transform property */
