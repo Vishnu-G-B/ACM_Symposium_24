@@ -27,8 +27,8 @@
 					</div>
 				</div>
 				<div class="title-text">
-					<h4 class="large-heading text-onPrimary">day 01</h4>
-					<h4 class="text-onPrimary">ethical AI: Challenges and Opportunities</h4>
+					<h4 class="large-heading ">day 01</h4>
+					<h4 class=" text-onPrimaryContainer">ethical AI: Challenges and Opportunities</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
@@ -138,7 +138,7 @@
 				</div>
 				<div class="title-text">
 					<h4 class="large-heading">day 02</h4>
-					<h4>AI in Action: Applications and Case Studies</h4>
+					<h4 class="text-onPrimaryContainer">AI in Action: Applications and Case Studies</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
@@ -303,10 +303,10 @@
 		}
 	}
 	h5 {
-		color: black;
+		color: #c6e7ff;
 	}
 	div {
-		color: black;
+		color: #c6e7ff;
 	}
 	.content-wrapper {
 		grid-column-gap: 24px;
@@ -386,7 +386,7 @@
 		font-size: 10rem;
 		font-weight: 700;
 		line-height: 1em;
-		color: black;
+		color: #c6e7ff;
 		@media screen and (max-width: 767px) {
 			font-size: 7.504rem;
 		}
@@ -430,9 +430,9 @@
 	}
 	.title {
 		width: 44px;
-		color: #fff;
+		color: #c6e7ff;
 		text-transform: uppercase;
-		background-color: #000;
+		background-color: #c6e7ff;
 		justify-content: center;
 		align-items: flex-start;
 		font-size: 1rem;
@@ -451,7 +451,7 @@
 		position: sticky;
 		top: 36px;
 		transform: rotate(-90deg);
-		color: white;
+		color: #004c6b;
 		@media screen and (max-width: 991px) {
 			position: static;
 		}
@@ -459,7 +459,7 @@
 	.title-graphic-text {
 		white-space: nowrap;
 		transform: translate(-50%);
-		color: white;
+		color: #004c6b;
 		@media screen and (max-width: 991px) {
 			position: static;
 		}
@@ -521,14 +521,14 @@
 		font-size: 5rem;
 		font-weight: 700;
 		line-height: 1.1em;
-		color: black;
+		color: #c6e7ff;
 	}
 	.small-text {
 		text-transform: uppercase;
 		font-size: 1rem;
 		font-weight: 500;
 		line-height: 1.4em;
-		color: black;
+		color: #c6e7ff;
 	}
 
 	.grow-wrapper {

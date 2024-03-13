@@ -3,21 +3,39 @@
 
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap/dist/gsap';
-	import Squiggle from '$lib/components/lottie/squiggle.svelte';
-	import BackgroundFill from '$lib/components/lottie/backgroundFill.svelte';
 	import StickyParas from '$lib/components/stickyParas.svelte';
 	import PinContainer from '$lib/components/ui/ThreeDPin/PinContainer.svelte';
 	import StickySchedule from '$lib/components/stickySchedule.svelte';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import emblaCarousel from 'embla-carousel-svelte';
-	import Layout from './+layout.svelte';
+	import * as THREE from 'three';
+	import NET from 'vanta/dist/vanta.net.min';
 
 	let options = { loop: true };
+	function vanta(node) {
+		let vw = document.getElementById('vw')?.getBoundingClientRect().width;
+		let vh = document.getElementById('vw')?.getBoundingClientRect().height;
+		NET({
+			el: node,
+			THREE: THREE,
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: vh,
+			minWidth: vw,
+			scale: 1.0,
+			scaleMobile: 1.0,
+			points: 13.0,
+			maxDistance: 20.0,
+			sapcing: 18.0,
+			color: 0x7accfe,
+			backgroundColor: 0x010f18
+		});
+	}
 
 	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
 		let vw = document.getElementById('vw')?.getBoundingClientRect().width;
-		let vh = window.innerHeight;
 		const ctx = gsap.context(() => {
 			const onLoadTimeline = gsap.timeline();
 			onLoadTimeline.to('.reveal-1', {
@@ -61,17 +79,27 @@
 				duration: 1,
 				ease: 'elastic.out(1,0.75)'
 			};
-			onLoadTimeline.to(spans, {
-				...tweenConfig,
-				stagger: 0.1
-			},"<");
 			onLoadTimeline.to(
-				'.textFlyin2',
+				spans,
 				{
-					y: 0,
-					duration: 0.4,
-					ease: 'expo.out',
+					...tweenConfig,
+					stagger: 0.1
 				},
+				'<'
+			);
+			const dateSpan = document.querySelectorAll('span.dateSpan');
+			const dateTweenConfig = {
+				y: 0,
+				duration: 1,
+				ease: 'elastic.out(1,0.75)'
+			};
+			onLoadTimeline.to(
+				dateSpan,
+				{
+					...dateTweenConfig,
+					stagger: 0.1
+				},
+				'+1.2'
 			);
 			let eg = gsap.timeline({
 				scrollTrigger: {
@@ -102,15 +130,20 @@
 					id: 'themes to sched',
 					trigger: '.themes',
 					start: 'center-=20% top',
-					end: vw < 479 ? 'center+=10% top' : '',
-					scrub: 1
+					end: vw < 479 ? 'center top' : '',
+					scrub: 2
 				}
 			});
-			themesTosched.to('.schedule', {
-				rotate: 0,
-				scale: 1,
-				y: vw < 479 ? -400 : 0
-			});
+			themesTosched.to(
+				'.schedule',
+				{
+					rotate: 0,
+					scale: 1,
+					y: vw < 479 ? -400 : 0,
+					duration: 1
+				},
+				'<'
+			);
 		});
 	});
 </script>
@@ -119,50 +152,57 @@
 <div class="landingPg h-screen w-full bg-primary sticky top-0" id="vw">
 	<div class="h-0 w-full bg-primaryContainer reveal-1 absolute bottom-0"></div>
 	<div class="h-0 w-full bg-onPrimaryContainer reveal-2 absolute bottom-0"></div>
-	<section class="h-0 w-full bg-primary reveal-3 absolute bottom-0">
+	<div class="h-0 w-full bg-primary reveal-3 absolute bottom-0" id="HeroBGAnim" use:vanta>
 		<div class="h-full w-full flex justify-around items-center flex-col hidden landing-content">
 			<div
 				class="h-full flex justify-center items-center
-            text-[8rem] Smobile:text-[9rem] Mmobile:text-[10rem] sm:text-[17rem] md:text-[19rem] lg:text-[22rem] xl:text-[34rem]
-            ml-4 lg:ml-[75px]
-			-mt-[12rem] sm:-mt-[3rem]
+            text-[6rem] Smobile:text-[7rem] Mmobile:text-[8rem] sm:text-[15rem] md:text-[17rem] lg:text-[20rem] xl:text-[32rem]
+            ml-4 lg:ml-[45px]
+			-mt-[12rem] sm:-mt-[5rem]
 			overflow-hidden
-            tracking-widest font-normal font-outwardBlock text-onPrimary
+            tracking-[2.8rem] font-normal font-outwardBlock text-primary
 			textFlyin1"
 				style="text-align: center;"
 			>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">T</span>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">U</span>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">R</span>
 				<span class="textSpan overflow-hidden translate-y-[100vh]">I</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">S</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">C</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">A</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">D</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">S'</span>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">N</span>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">G</span>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">E</span>
+				<span class="textSpan overflow-hidden translate-y-[100vh]">R'</span>
 				<span class="textSpan overflow-hidden translate-y-[100vh]">2</span>
 				<span class="textSpan overflow-hidden translate-y-[100vh]">4</span>
 			</div>
 			<div
 				class="
-				text-center tracking-wide font-humaneSemiBold text-onSurface
-				text-[3rem] leading-[2.3rem] translate-y-[100vh]
-				overflow-hidden textFlyin2
-        		-mt-[37rem] sm:-mt-[28rem] lg:-mt-[26rem] xl:-mt-[24rem] lg:ml-[25px] pt-1"
+				text-center tracking-wide font-humaneSemiBold text-onPrimaryContainer
+				text-[3rem] leading-[2.3rem]
+        		-mt-[37rem] sm:-mt-[28rem] lg:-mt-[26rem] xl:-mt-[24rem] lg:ml-[25px] py-1"
 			>
-				APRIL 3RD ONWARDS, <br /> MIT BENGALURU
+				<span class="dateSpan inline-block overflow-hidden translate-y-[20rem] py-1 text-center"
+					>APRIL 3RD ONWARDS,</span
+				>
+				<br />
+				<span class="dateSpan inline-block overflow-hidden translate-y-[20rem] py-1 text-center"
+					>@ MIT BENGALURU</span
+				>
 			</div>
 		</div>
-	</section>
+	</div>
 </div>
 
 <!-- Themes Section -->
 
 <div class="w-full h-fit themes scale-[0.55] rotate-12">
-	<section class="bg-onSurface border-x-2 border-t-2 z-[99]">
+	<section class= " bg-surface border-x-2 border-t-2 z-[99]">
 		<StickyParas />
 	</section>
 </div>
 
 <div class="schedule scale-[0.2] lg:scale-[0.65] -rotate-[8deg]">
-	<section class="w-full h-fit bg-surface">
+	<section class="w-full h-fit bg-primaryContainer">
 		<StickySchedule />
 	</section>
 </div>

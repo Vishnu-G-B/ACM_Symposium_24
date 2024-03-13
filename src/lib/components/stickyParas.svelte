@@ -1,6 +1,6 @@
 <div class="z-[6]">
 	<div
-		class="w-fit flex flex-auto font-humaneSemiBold text-onPrimary text-[8rem] sm:text-[10rem] tracking-wider pl-4"
+		class="w-fit flex flex-auto font-humaneSemiBold text-primary text-[8rem] sm:text-[10rem] tracking-wider pl-4"
 	>
 		THEMES
 	</div>
@@ -9,11 +9,11 @@
 			<div class="vertical-line mt-5 sm:mt-0"></div>
 			<div class="rows themes-row">
 				<h4
-					class="text-onPrimary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
+					class="text-primary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
 				>
 					Ethics
 				</h4>
-				<div class="text-surface -mt-16">
+				<div class="text-onPrimaryContainer -mt-16">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, nemo voluptatibus
 					dicta, harum ipsa cupiditate fugiat magni reprehenderit consequuntur veritatis fuga nulla
 					perferendis ipsum perspiciatis maxime, cum delectus incidunt quo.
@@ -25,11 +25,11 @@
 				class="rows themes-row align-center"
 			>
 				<h4
-					class=" text-left lg:text-center text-onPrimary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
+					class=" text-left lg:text-center text-primary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
 				>
 					Leadership
 				</h4>
-				<div class=" text-left lg:text-center text-surface -mt-16">
+				<div class=" text-left lg:text-center text-onPrimaryContainer -mt-16">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus reprehenderit unde
 					vitae, accusamus quasi quas blanditiis ad, sequi quae repudiandae quidem assumenda magnam
 					ipsa error, consequatur corporis eveniet quisquam non.
@@ -41,11 +41,11 @@
 				class="rows themes-row align-bottom"
 			>
 				<h4
-					class=" text-left lg:text-right text-onPrimary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
+					class=" text-left lg:text-right text-primary font-humaneSemiBold text-[6rem] sm:text-[8rem] uppercase tracking-wider"
 				>
 					Innovation
 				</h4>
-				<div class="text-left lg:text-right text-surface -mt-16">
+				<div class="text-left lg:text-right text-onPrimaryContainer -mt-16">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex nemo quaerat harum eius
 					aliquid, ea dolores vel nisi excepturi maiores atque recusandae laborum beatae mollitia
 					dolore illum quae, eaque nobis.
@@ -83,7 +83,7 @@
 	.rows.themes-row {
 		position: -webkit-sticky;
 		position: sticky;
-		top: 100px;
+		top: 10px;
 	}
 	.rows.themes-row.align-bottom {
 		align-self: flex-end;
@@ -103,7 +103,7 @@
 	.vertical-line {
 		min-height: 1px;
 		min-width: 1px;
-		background-color: #fffbff;
+		background-color: #e2e2e5;
 		align-self: stretch;
 	}
 </style>

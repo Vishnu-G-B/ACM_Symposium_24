@@ -11,19 +11,18 @@
     font-family: "Humane-SemiBold";
     src: url("/fonts/Humane-SemiBold.ttf");
 }
-@font-face {
-    font-family: "Humane-Thin";
-    src: url("/fonts/Humane-Thin.ttf");
-}
 
 @font-face {
     font-family: "Subjectivity-medSlant";
     src: url("/fonts/Subjectivity-MediumSlanted.otf");
 }
-
 @font-face {
-    font-family: "Subjectivity-regSlant";
-    src: url("/fonts/Subjectivity-RegularSlanted.otf");
+    font-family: "BaseBornSans";
+    src: url("/fonts/BasebornSans.woff2");
+}
+@font-face {
+    font-family: "TWK";
+    src: url("/fonts/TWKLausanne.woff2");
 }
 
 body {

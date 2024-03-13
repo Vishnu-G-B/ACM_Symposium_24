@@ -40,10 +40,10 @@
 	});
 </script>
 
-<div class="fixed -top-[42%] md:-top-[36.7%] left-0 right-0 z-50" id="navbar">
+<div class="fixed -top-[275.15px] left-0 right-0 z-50" id="navbar">
 	<nav class="w-[18rem] sm:w-[23rem] h-[20rem] flex justify-center items-center ml-auto mr-auto relative">
 		<div
-			class="w-full h-[12rem] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[20px] rounded-bl-[20px] bg-primaryContainer
+			class="w-full h-[12rem] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[20px] rounded-bl-[20px] bg-onPrimaryContainer
   flex justify-center items-center relative z-50"
 		>
 			<div
@@ -63,7 +63,7 @@
 				<div
 					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/" data-replace="Events"> <span>Events</span></a>
+					<a href="/events" data-replace="Events"> <span>Events</span></a>
 				</div>
 				<div
 					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
@@ -82,7 +82,7 @@
 		>
 			<path
 				d="M0 52V50C0 22.3858 22.3858 0 50 0H471C498.614 0 521 22.3858 521 50V52C521 79.6142 498.614 102 471 102H404C385.222 102 370 117.222 370 136C370 154.778 354.778 170 336 170H186C167.222 170 152 154.778 152 136C152 117.222 136.778 102 118 102H50C22.3858 102 0 79.6142 0 52Z"
-				fill="#e9ddff"
+				fill="#c6e7ff"
 			/>
 		</svg>
 		<div
@@ -118,7 +118,7 @@
 		left: 0;
 	}
 	a::before {
-		background-color: #6d30e9;
+		background-color: #71bcff;
 		height: 2px;
 		bottom: 0;
 		transform-origin: 100% 50%;
@@ -132,7 +132,7 @@
 		transform-origin: 100% 50%;
 		transform: translate3d(200%, 0, 0);
 		transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-		color: #6d30e9;
+		color: #71bcff;
 	}
 
 	a:hover::before {

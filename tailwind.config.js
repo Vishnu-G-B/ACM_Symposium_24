@@ -15,19 +15,19 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#6d30e9",
-        onPrimary: "#ffffff",
-        primaryContainer: "#e9ddff",
-        onPrimaryContainer: "#22005d",
-        surface: "#fffbff",
-        onSurface: "#1c1b1e",
+        primary: "#82cfff",
+        onPrimary: "#00344b",
+        primaryContainer: "#004c6b",
+        onPrimaryContainer: "#c6e7ff",
+        surface: "#191c1e",
+        onSurface: "#e2e2e5",
       },
       fontFamily: {
         outwardBlock: ["Outward-Block", "Helvetica"],
         subjectivityMedSlant: ["Subjectivity-medSlant", "Helvetica"],
-        subjectivityRegSlant: ["Subjectivity-regSlant", "Helvetica"],
         humaneSemiBold: ["Humane-SemiBold","Helvetica"],
-        humaneThin: ["Humane-Thin","Helvetica"],
+        basebornSans: ["BaseBornSans","Helvetica"],
+        TWK: ["TWL","Helvetica"]
       },
     },
   },
