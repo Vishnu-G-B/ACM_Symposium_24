@@ -1,15 +1,5 @@
 <script>
 	// @ts-nocheck
-	import image1 from '$lib/images/Team/Dr Gururaj.png';
-	import image2 from '$lib/images/Team/Dr Shreyas.jpg';
-	import image3 from '$lib/images/Team/Nishant Tripathi.jpeg';
-	import image4 from '$lib/images/Team/PARTH BHATNAGAR.jpg';
-	import image5 from '$lib/images/Team/Prince Mathur.jpg';
-	import image6 from '$lib/images/Team/SAURABH KUMAR.jpg';
-	import image7 from '$lib/images/Team/Shivansh Gautam.jpg';
-	import image8 from '$lib/images/Team/VEDANG PATIL.jpeg';
-	import image9 from '$lib/images/Team/VEDANG PATIL.jpeg';
-
 	import { onDestroy, onMount } from 'svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -20,10 +10,27 @@
 	import CardContainer from '$lib/components/ui/ThreeDCardEffect/CardContainer.svelte';
 	import CardItem from '$lib/components/ui/ThreeDCardEffect/CardItem.svelte';
 
-	const images = import.meta.glob('$lib/images/Team/*.{jpg,jpeg,png,svg}');
+	const images = import.meta.glob('$lib/Team/*.*', { eager: true });
+	let imgArr = [];
+	for (const [path, module] of Object.entries(images)) {
+		let name = path.split('/').pop().split('.')[0];
+		let imgSrc = module.default;
+		let obj = {
+			personName: name,
+			personImg: imgSrc
+		};
+		imgArr.push(obj);
+	}
+	const desiredOrder = ['Dr Gururaj', 'Dr Shreyas'];
+    const lastPerson = imgArr.find(obj => obj.personName == "Vedang Patil");
+    const firstTwo = imgArr.filter(obj => desiredOrder.includes(obj.personName));
+    const remaining = imgArr.filter(obj => !desiredOrder.includes(obj.personName) && obj.personName != "Vedang Patil");
+    const newArr = [...firstTwo,...remaining,lastPerson];
+    console.log(imgArr);
+    
 
 	let isMouseEntered = false;
-	let options = { loop: true };
+	let options = { loop: true, dragFree:true };
 	let effect;
 	let isMobile = false;
 
@@ -212,365 +219,30 @@
 		<div class=" font-basebornSans text-6xl uppercase -mb-4 mt-6 ml-2">Tech Summit Leads</div>
 		<div class:embla={!isMobile} use:emblaCarousel={{ options }}>
 			<div class="embla__container">
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
+				{#each newArr as person}
+					<div class="embla__slide h-fit w-fit">
+						<CardContainer bind:isMouseEntered className="inter-var">
+							<CardBody
+								className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
 							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="w-full h-dvh bg-surface border-x-2 border-t-2 flex flex-col">
-		<div class=" font-basebornSans text-6xl uppercase -mb-4 mt-6 ml-2">Event Leads</div>
-		<div class="embla" use:emblaCarousel={{ options }}>
-			<div class="embla__container">
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
-				<div class="embla__slide h-fit w-fit">
-					<CardContainer bind:isMouseEntered className="inter-var">
-						<CardBody
-							className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
-						>
-							<CardItem
-								{isMouseEntered}
-								translateZ="50"
-								className="text-xl font-bold text-neutral-600 dark:text-white"
-							>
-								Dr. Gururaj
-							</CardItem>
-							<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
-								<img
-									src={image1}
-									class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
-									alt="thumbnail"
-								/>
-							</CardItem>
-						</CardBody>
-					</CardContainer>
-				</div>
+								<CardItem
+									{isMouseEntered}
+									translateZ="50"
+									className="text-xl font-bold text-neutral-600 dark:text-white"
+								>
+									{person.personName}
+								</CardItem>
+								<CardItem {isMouseEntered} translateZ="100" className="w-full h-[90%] mt-4">
+									<img
+										src={person.personImg}
+										class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
+										alt="thumbnail"
+									/>
+								</CardItem>
+							</CardBody>
+						</CardContainer>
+					</div>
+				{/each}
 			</div>
 		</div>
 	</section>
