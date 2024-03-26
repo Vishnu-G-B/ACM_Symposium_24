@@ -4,7 +4,7 @@
 	import emblaCarousel from 'embla-carousel-svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import * as THREE from 'three';
 	import NET from 'vanta/dist/vanta.net.min';
 	import RulebookButton from '$lib/components/rulebookButton.svelte';
@@ -268,6 +268,11 @@
 				opacity: 0
 			});
 		});
+	});
+	onDestroy(() => {
+		if (effect) {
+			effect.destroy();
+		}
 	});
 </script>
 
