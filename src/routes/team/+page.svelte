@@ -237,6 +237,7 @@
 										src={person.personImg}
 										class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
 										alt="thumbnail"
+                                        loading="lazy"
 									/>
 								</CardItem>
 							</CardBody>
