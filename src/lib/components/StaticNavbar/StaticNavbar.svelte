@@ -68,7 +68,7 @@
 				<div
 					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/" data-replace="Speakers"> <span>Speakers</span></a>
+					<a href="/" data-replace="Team"> <span>Team</span></a>
 				</div>
 			</div>
 		</div>

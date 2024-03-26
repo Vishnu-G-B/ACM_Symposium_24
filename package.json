@@ -35,6 +35,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@slidy/animation": "^1.0.8",
+		"@slidy/core": "^3.7.6",
+		"@slidy/easing": "^1.0.6",
+		"@slidy/media": "^1.2.8",
+		"@slidy/svelte": "^3.4.4",
 		"clsx": "^2.1.0",
 		"embla-carousel-svelte": "^8.0.0",
 		"gsap": "^3.12.5",

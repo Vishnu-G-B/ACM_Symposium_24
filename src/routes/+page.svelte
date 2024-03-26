@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import StickyParas from '$lib/components/stickyParas.svelte';
 	import PinContainer from '$lib/components/ui/ThreeDPin/PinContainer.svelte';
@@ -12,10 +12,11 @@
 	import NET from 'vanta/dist/vanta.net.min';
 
 	let options = { loop: true };
+	let effect;
 	function vanta(node) {
 		let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 		let vh = document.getElementById('vw')?.getBoundingClientRect().height;
-		NET({
+		effect = NET({
 			el: node,
 			THREE: THREE,
 			mouseControls: true,
@@ -106,7 +107,32 @@
 					trigger: '.landingPg',
 					start: 'top top',
 					end: 'bottom top',
-					scrub: 1
+					scrub: 1,
+					onLeave: () =>{
+						console.log("Detroying the BG animation now");
+						effect ? effect.destroy() : console.log('effect does not exist apparently')
+					},
+					onEnterBack: () => {
+						console.log("Redoing the BG animation now");
+						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
+						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
+						effect = NET({
+							el: '.HeroBGAnim',
+							THREE: THREE,
+							mouseControls: true,
+							touchControls: true,
+							gyroControls: false,
+							minHeight: vh,
+							minWidth: vw,
+							scale: 1.0,
+							scaleMobile: 1.0,
+							points: 13.0,
+							maxDistance: 20.0,
+							sapcing: 18.0,
+							color: 0x7accfe,
+							backgroundColor: 0x010f18
+						});
+					}
 				}
 			});
 			eg.to('.landingPg', {
@@ -131,7 +157,7 @@
 					trigger: '.themes',
 					start: 'center-=20% top',
 					end: vw < 479 ? 'center top' : '',
-					scrub: 2
+					scrub: 1
 				}
 			});
 			themesTosched.to(
@@ -146,46 +172,55 @@
 			);
 		});
 	});
+	onDestroy(() => {
+		if (effect) {
+			effect.destroy();
+		}
+	});
 </script>
 
 <!-- Landing Page -->
 <div class="landingPg h-screen w-full bg-primary sticky top-0" id="vw">
 	<div class="h-0 w-full bg-primaryContainer reveal-1 absolute bottom-0"></div>
 	<div class="h-0 w-full bg-onPrimaryContainer reveal-2 absolute bottom-0"></div>
-	<div class="h-0 w-full bg-primary reveal-3 absolute bottom-0" id="HeroBGAnim" use:vanta>
+	<div
+		class="h-0 w-full bg-primary reveal-3 absolute bottom-0 HeroBGAnim"
+		id="HeroBGAnim"
+		use:vanta
+	>
 		<div class="h-full w-full flex justify-around items-center flex-col hidden landing-content">
 			<div
 				class="h-full flex justify-center items-center
-            text-[6rem] Smobile:text-[7rem] Mmobile:text-[8rem] sm:text-[15rem] md:text-[17rem] lg:text-[20rem] xl:text-[32rem]
-            ml-4 lg:ml-[45px]
+            text-[3rem] Smobile:text-[3.5rem] Mmobile:text-[4rem] sm:text-[6rem] md:text-[6.5rem] lg:text-[9rem] xl:text-[13rem]
+            lg:ml-[20px]
 			-mt-[12rem] sm:-mt-[5rem]
 			overflow-hidden
-            tracking-[2.8rem] font-normal font-outwardBlock text-primary
+             font-normal font-basebornSans text-onPrimaryContainer
 			textFlyin1"
 				style="text-align: center;"
 			>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">T</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">U</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">R</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">I</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">N</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">G</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">E</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">R'</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">2</span>
-				<span class="textSpan overflow-hidden translate-y-[100vh]">4</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">T</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">U</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">R</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">I</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">N</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">G</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">R'</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">2</span>
+				<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">4</span>
 			</div>
 			<div
 				class="
-				text-center tracking-wide font-humaneSemiBold text-onPrimaryContainer
-				text-[3rem] leading-[2.3rem]
+				text-center tracking-wide font-TWK text-onSurface
+				text-[1rem] lg:text-[1.5rem] leading-[2.3rem]
         		-mt-[37rem] sm:-mt-[28rem] lg:-mt-[26rem] xl:-mt-[24rem] lg:ml-[25px] py-1"
 			>
-				<span class="dateSpan inline-block overflow-hidden translate-y-[20rem] py-1 text-center"
-					>APRIL 3RD ONWARDS,</span
+				<span class="dateSpan block overflow-hidden translate-y-[20rem] py-1 -mb-14 text-center"
+					>APRIL 10<sup>th</sup> ONWARDS,</span
 				>
 				<br />
-				<span class="dateSpan inline-block overflow-hidden translate-y-[20rem] py-1 text-center"
+				<span class="dateSpan block overflow-hidden translate-y-[20rem] py-1 text-center"
 					>@ MIT BENGALURU</span
 				>
 			</div>
@@ -196,7 +231,7 @@
 <!-- Themes Section -->
 
 <div class="w-full h-fit themes scale-[0.55] rotate-12">
-	<section class= " bg-surface border-x-2 border-t-2 z-[99]">
+	<section class=" bg-surface border-x-2 border-t-2 z-[99]">
 		<StickyParas />
 	</section>
 </div>
@@ -207,7 +242,7 @@
 	</section>
 </div>
 
-<div class="w-full h-fit">
+<!-- <div class="w-full h-fit">
 	<section class="w-full h-dvh bg-onSurface border-x-2 border-t-2">
 		<div class="embla" use:emblaCarousel={{ options }}>
 			<div class="embla__container">
@@ -257,7 +292,7 @@
 				</div>
 				<div class="embla__slide">
 					<div class="flex h-[40rem] w-full items-center justify-center">
-						<PinContainer title="their linkekin or smthng" href="#">
+						<PinContainer title="their linkedin or smthng" href="#">
 							<div
 								class="flex h-[20rem] w-[20rem] basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2"
 							>
@@ -277,7 +312,7 @@
 			</div>
 		</div>
 	</section>
-</div>
+</div> -->
 
 <style>
 	.embla {
