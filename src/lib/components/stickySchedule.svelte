@@ -2,9 +2,9 @@
 	<div class="horizontal-line"></div>
 	<div class="container---main">
 		<div class="section-inner grid-title">
-			<h4 class="large-heading font-humaneSemiBold">schedule</h4>
+			<h4 class="large-heading font-basebornSans">schedule</h4>
 			<div class="vertical-line"></div>
-			<h4 class="">may 15th – 21st</h4>
+			<h4 class="!text-3xl sm:!text-6xl">April 8<sup>th</sup> - 13<sup>th</sup></h4>
 		</div>
 	</div>
 	<div class="horizontal-line"></div>
@@ -17,18 +17,108 @@
 					<div class="vertical-line title-line"></div>
 					<div class="title">
 						<div class="title-graphic-text-wrapper">
-							<div
-								id="w-node-_1a6383fb-8f27-9c9f-0210-137ca16524c0-ebb101d7"
-								class="title-graphic-text text-onPrimary"
-							>
-								Schedule
-							</div>
+							<div class="title-graphic-text text-onPrimary">Schedule</div>
 						</div>
 					</div>
 				</div>
 				<div class="title-text">
-					<h4 class="large-heading ">day 01</h4>
-					<h4 class=" text-onPrimaryContainer">ethical AI: Challenges and Opportunities</h4>
+					<h4 class="large-heading">day 01</h4>
+					<h4 class=" text-onPrimaryContainer !font-basebornSans">
+						ethical AI: Challenges and Opportunities
+					</h4>
+				</div>
+			</div>
+			<div class="vertical-line"></div>
+			<div class="rows gap-1x">
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">09:00AM</h4>
+					<div class="rows gap-0-75x">
+						<h4 class="medium-heading !uppercase">welcome</h4>
+						<div class="small-text">by ken maskall</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">09:30am</h4>
+					<div class="rows gap-0-75x">
+						<h5>KEYNOTE ADDRESS</h5>
+						<div class=" font-TWK">
+							Presented by renowned AI leader Ken Maskall, followed by insightful panel discussions
+							and workshops focused on AI ethics, responsible innovation, and the integration of
+							artificial intelligence in various industries.
+						</div>
+						<div class="small-text">by ken maskall</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">10:00AM</h4>
+					<div class="rows gap-0-75x">
+						<h5>AI in Education: Shaping the Classroom of Tomorrow</h5>
+						<div class="font-TWK">
+							Explore the exciting potential of AI in education, and how it can be used to
+							personalize learning, improve educational outcomes, and create new opportunities for
+							students and educators alike.
+						</div>
+						<div class="small-text">by Laura Davis</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">12:00PM</h4>
+					<div class="rows gap-0-75x">
+						<h4 class="medium-heading">lunch</h4>
+						<div class="small-text">abacus restaruant, exhibition centre.</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">01:30PM</h4>
+					<div class="rows gap-0-75x">
+						<h5>AI for Good: Exploring Sustainable Applications</h5>
+						<div class="font-TWK">
+							In this workshop, we will explore the sustainable applications of AI, including how it
+							can be used to address pressing global challenges, such as climate change, food
+							security, and healthcare, and how it can help organizations build sustainable business
+							models.
+						</div>
+						<div class="small-text">by Aisha Patel</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">03:00PM</h4>
+					<div class="rows gap-0-75x">
+						<h5>Building Trust in AI: Strategies and Best Practices</h5>
+						<div class="font-TWK">
+							We will discuss the challenges and opportunities associated with building trust in AI
+							and provide practical guidance on how to create transparent, explainable, and
+							accountable AI systems.
+						</div>
+						<div class="small-text">by Laura Davis</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="horizontal-line"></div>
+	<div class="container---main">
+		<div class="section-inner has-title">
+			<div class="title-wrapper">
+				<div class="title-graphic">
+					<div class="vertical-line"></div>
+					<div class="vertical-line"></div>
+					<div class="vertical-line"></div>
+					<div class="title">
+						<div class="title-graphic-text-wrapper">
+							<div class="title-graphic-text">schedule</div>
+						</div>
+					</div>
+				</div>
+				<div class="title-text">
+					<h4 class="large-heading">day 02</h4>
+					<h4 class="text-onPrimaryContainer">AI in Action: Applications and Case Studies</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
@@ -45,11 +135,10 @@
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">09:30am</h4>
 					<div class="rows gap-0-75x">
-						<h5>KEYNOTE ADDRESS</h5>
-						<div>
-							Presented by renowned AI leader Ken Maskall, followed by insightful panel discussions
-							and workshops focused on AI ethics, responsible innovation, and the integration of
-							artificial intelligence in various industries.
+						<h5>AI and Cybersecurity: Opportunities and Risks</h5>
+						<div class="font-TWK">
+							This talk will explore how AI is changing the cybersecurity landscape and how it can
+							be used to enhance security and protect against cyber threats.
 						</div>
 						<div class="small-text">by ken maskall</div>
 					</div>
@@ -58,11 +147,13 @@
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">10:00AM</h4>
 					<div class="rows gap-0-75x">
-						<h5>AI in Education: Shaping the Classroom of Tomorrow</h5>
-						<div>
-							Explore the exciting potential of AI in education, and how it can be used to
-							personalize learning, improve educational outcomes, and create new opportunities for
-							students and educators alike.
+						<h5>The Role of AI in Healthcare Innovation</h5>
+						<div class="font-TWK">
+							In this workshop, we will explore the latest applications of AI in healthcare, such as
+							personalized medicine, patient monitoring, and disease prevention. We will also
+							discuss the challenges and opportunities associated with integrating AI into
+							healthcare systems, and provide practical guidance on how to develop and deploy
+							AI-powered healthcare solutions that are ethical, transparent, and effective.
 						</div>
 						<div class="small-text">by Laura Davis</div>
 					</div>
@@ -72,189 +163,43 @@
 					<h4 class="medium-heading">12:00PM</h4>
 					<div class="rows gap-0-75x">
 						<h4 class="medium-heading">lunch</h4>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c6c-ebb101d7" class="small-text">
-							abacus restaruant, exhibition centre.
-						</div>
+						<div class="small-text">abacus restaruant, exhibition centre.</div>
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c6f-ebb101d7"
-					class="columns schedule-column"
-				>
+				<div class="columns schedule-column">
 					<h4 class="medium-heading">01:30PM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c72-ebb101d7" class="rows gap-0-75x">
-						<h5>AI for Good: Exploring Sustainable Applications</h5>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c75-ebb101d7">
-							In this workshop, we will explore the sustainable applications of AI, including how it
-							can be used to address pressing global challenges, such as climate change, food
-							security, and healthcare, and how it can help organizations build sustainable business
-							models.
-						</div>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c77-ebb101d7" class="small-text">
-							by Aisha Patel
-						</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c7a-ebb101d7"
-					class="columns schedule-column"
-				>
-					<h4 class="medium-heading">03:00PM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c7d-ebb101d7" class="rows gap-0-75x">
-						<h5>Building Trust in AI: Strategies and Best Practices</h5>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c80-ebb101d7">
-							We will discuss the challenges and opportunities associated with building trust in AI
-							and provide practical guidance on how to create transparent, explainable, and
-							accountable AI systems.
-						</div>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c82-ebb101d7" class="small-text">
-							by Laura Davis
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="horizontal-line"></div>
-	<div class="container---main">
-		<div class="section-inner has-title">
-			<div class="title-wrapper">
-				<div class="title-graphic">
-					<div class="vertical-line"></div>
-					<div class="vertical-line"></div>
-					<div class="vertical-line"></div>
-					<div class="title">
-						<div class="title-graphic-text-wrapper">
-							<div
-								id="w-node-c69eeeb0-ac96-5d87-0f21-bb01b364a3ab-ebb101d7"
-								class="title-graphic-text"
-							>
-								schedule
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="title-text">
-					<h4 class="large-heading">day 02</h4>
-					<h4 class="text-onPrimaryContainer">AI in Action: Applications and Case Studies</h4>
-				</div>
-			</div>
-			<div class="vertical-line"></div>
-			<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c96-ebb101d7" class="rows gap-1x">
-				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c9c-ebb101d7"
-					class="columns schedule-column"
-				>
-					<h4 class="medium-heading">09:00AM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09c9f-ebb101d7" class="rows gap-0-75x">
-						<h4 class="medium-heading">welcome</h4>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09ca2-ebb101d7" class="small-text">
-							by ken maskall
-						</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09ca5-ebb101d7"
-					class="columns schedule-column"
-				>
-					<h4 class="medium-heading">09:30am</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09ca8-ebb101d7" class="rows gap-0-75x">
-						<h5>AI and Cybersecurity: Opportunities and Risks</h5>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cab-ebb101d7">
-							This talk will explore how AI is changing the cybersecurity landscape and how it can
-							be used to enhance security and protect against cyber threats.
-						</div>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cad-ebb101d7" class="small-text">
-							by ken maskall
-						</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cb0-ebb101d7"
-					class="columns schedule-column"
-				>
-					<h4 class="medium-heading">10:00AM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cb3-ebb101d7" class="rows gap-0-75x">
-						<h5>The Role of AI in Healthcare Innovation</h5>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cb6-ebb101d7">
-							In this workshop, we will explore the latest applications of AI in healthcare, such as
-							personalized medicine, patient monitoring, and disease prevention. We will also
-							discuss the challenges and opportunities associated with integrating AI into
-							healthcare systems, and provide practical guidance on how to develop and deploy
-							AI-powered healthcare solutions that are ethical, transparent, and effective.
-						</div>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cb8-ebb101d7" class="small-text">
-							by Laura Davis
-						</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cbb-ebb101d7"
-					class="columns schedule-column"
-				>
-					<h4 class="medium-heading">12:00PM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cbe-ebb101d7" class="rows gap-0-75x">
-						<h4 class="medium-heading">lunch</h4>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cc1-ebb101d7" class="small-text">
-							abacus restaruant, exhibition centre.
-						</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cc4-ebb101d7"
-					class="columns schedule-column"
-				>
-					<h4 class="medium-heading">01:30PM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cc7-ebb101d7" class="rows gap-0-75x">
+					<div class="rows gap-0-75x">
 						<h5>AI and Business Strategy: Creating Value and Managing Risks</h5>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cca-ebb101d7">
+						<div class="font-TWK">
 							Explore how AI is reshaping business strategy and providing new opportunities for
 							growth and innovation. We will discuss how to leverage AI to create value for
 							customers, optimize business processes, and gain competitive advantage.
 						</div>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09ccc-ebb101d7" class="small-text">
-							by Aisha Patel
-						</div>
+						<div class="small-text">by Aisha Patel</div>
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09ccf-ebb101d7"
-					class="columns schedule-column"
-				>
+				<div class="columns schedule-column">
 					<h4 class="medium-heading">03:00PM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cd2-ebb101d7" class="rows gap-0-75x">
+					<div class="rows gap-0-75x">
 						<h5>The Future of AI</h5>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cd5-ebb101d7">
+						<div class="font-TWK">
 							This talk will provide a forward-looking perspective on the future of AI and its
 							potential impact on society, industry, and individuals. We will discuss the
 							opportunities and challenges associated with the continued development and deployment
 							of AI, and explore the ethical implications of AI on issues such as employment,
 							privacy, and inequality.
 						</div>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cd7-ebb101d7" class="small-text">
-							by Laura Davis
-						</div>
+						<div class="small-text">by Laura Davis</div>
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-				<div
-					id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cda-ebb101d7"
-					class="columns schedule-column"
-				>
+				<div class="columns schedule-column">
 					<h4 class="medium-heading">07:00PM</h4>
-					<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09cdd-ebb101d7" class="rows gap-0-75x">
+					<div class="rows gap-0-75x">
 						<h4 class="medium-heading">dinner</h4>
-						<div id="w-node-c2808cf3-7225-eaef-8661-07b7adb09ce0-ebb101d7" class="small-text">
-							abacus restaruant, exhibition centre.
-						</div>
+						<div class="small-text">abacus restaruant, exhibition centre.</div>
 					</div>
 				</div>
 			</div>
@@ -271,17 +216,18 @@
 			<div class="vertical-line"></div>
 			<div class="container---xs">
 				<div class="rows">
-					<div class="large-text">Tickets on sale now.</div>
+					<div class="large-text !font-basebornSans !uppercase">Explore Turinger '24</div>
 					<div class="columns cta-action">
-						<div class="small-text">
-							may 15th – 21st<br />san francisco + Online
+						<div class="small-text !font-TWK !text-lg">
+							April 8<sup>th</sup>–13<sup>th</sup>,<br />@MITBLR
 						</div>
 						<div class="vertical-line"></div>
-						<button
-							class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
-						>
-							See more
-						</button>
+						<a class="fancy" href="/events">
+							<span class="top-key"></span>
+							<span class="text">Register Now!!</span>
+							<span class="bottom-key-1"></span>
+							<span class="bottom-key-2"></span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -291,6 +237,141 @@
 </div>
 
 <style>
+	.fancy {
+		background-color: transparent;
+		border: 2px solid #fff;
+		border-radius: 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: #000;
+		cursor: pointer;
+		display: inline-block;
+		float: right;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		margin: 0;
+		outline: none;
+		overflow: visible;
+		padding: 1.25em 2em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		text-transform: none;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		font-size: 13px;
+	}
+
+	.fancy::before {
+		content: ' ';
+		width: 1.5625rem;
+		height: 2px;
+		background: white;
+		top: 50%;
+		left: 1.5em;
+		position: absolute;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-transform-origin: center;
+		-ms-transform-origin: center;
+		transform-origin: center;
+		-webkit-transition:
+			background 0.3s linear,
+			width 0.3s linear;
+		transition:
+			background 0.3s linear,
+			width 0.3s linear;
+	}
+
+	.fancy .text {
+		font-size: 1.125em;
+		line-height: 1.33333em;
+		font-family: "BaseBornSans","Helvetica";
+		padding-left: 2em;
+		display: block;
+		text-align: left;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+	}
+
+	.fancy .top-key {
+		height: 2px;
+		width: 1.5625rem;
+		top: -2px;
+		left: 0.625rem;
+		position: absolute;
+		background: #004c6b;
+		-webkit-transition:
+			width 0.5s ease-out,
+			left 0.3s ease-out;
+		transition:
+			width 0.5s ease-out,
+			left 0.3s ease-out;
+	}
+
+	.fancy .bottom-key-1 {
+		height: 2px;
+		width: 1.5625rem;
+		right: 1.875rem;
+		bottom: -2px;
+		position: absolute;
+		background: #004c6b;
+		-webkit-transition:
+			width 0.5s ease-out,
+			right 0.3s ease-out;
+		transition:
+			width 0.5s ease-out,
+			right 0.3s ease-out;
+	}
+
+	.fancy .bottom-key-2 {
+		height: 2px;
+		width: 0.625rem;
+		right: 0.625rem;
+		bottom: -2px;
+		position: absolute;
+		background: #004c6b;
+		-webkit-transition:
+			width 0.5s ease-out,
+			right 0.3s ease-out;
+		transition:
+			width 0.5s ease-out,
+			right 0.3s ease-out;
+	}
+
+	.fancy:hover {
+		color: white;
+		background: white;
+	}
+
+	.fancy:hover::before {
+		width: 0.9375rem;
+		background: black;
+	}
+
+	.fancy:hover .text {
+		color: black;
+		padding-left: 1.5em;
+	}
+
+	.fancy:hover .top-key {
+		left: -2px;
+		width: 0px;
+	}
+
+	.fancy:hover .bottom-key-1,
+	.fancy:hover .bottom-key-2 {
+		right: 0;
+		width: 0;
+	}
 	h4 {
 		text-transform: uppercase;
 		margin-top: 0;
@@ -304,6 +385,9 @@
 	}
 	h5 {
 		color: #c6e7ff;
+		font-weight: bold;
+		font-size: 1.3rem;
+		font-family: 'TWK', 'Helvetica';
 	}
 	div {
 		color: #c6e7ff;
@@ -382,16 +466,15 @@
 	}
 	.large-heading {
 		letter-spacing: 0.025em;
-		font-family: 'Humane-SemiBold', sans-serif;
-		font-size: 10rem;
-		font-weight: 700;
+		font-family: 'baseBornSans', sans-serif;
+		font-size: 7rem;
 		line-height: 1em;
 		color: #c6e7ff;
 		@media screen and (max-width: 767px) {
-			font-size: 7.504rem;
+			font-size: 5.35rem;
 		}
 		@media screen and (max-width: 479px) {
-			font-size: 5.631rem;
+			font-size: 3rem;
 		}
 	}
 	.vertical-line {
@@ -516,12 +599,13 @@
 		}
 	}
 	.medium-heading {
-		letter-spacing: 0.025em;
-		font-family: 'Humane-SemiBold', sans-serif;
-		font-size: 5rem;
-		font-weight: 700;
+		font-family: "BaseBornSans","Helvetica";
+		font-size: 3rem;
 		line-height: 1.1em;
 		color: #c6e7ff;
+		@media screen and (max-width: 479px) {
+			font-size: 2.5rem;
+		}
 	}
 	.small-text {
 		text-transform: uppercase;

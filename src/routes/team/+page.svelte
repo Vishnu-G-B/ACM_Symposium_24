@@ -22,15 +22,15 @@
 		imgArr.push(obj);
 	}
 	const desiredOrder = ['Dr Gururaj', 'Dr Shreyas'];
-    const lastPerson = imgArr.find(obj => obj.personName == "Vedang Patil");
-    const firstTwo = imgArr.filter(obj => desiredOrder.includes(obj.personName));
-    const remaining = imgArr.filter(obj => !desiredOrder.includes(obj.personName) && obj.personName != "Vedang Patil");
-    const newArr = [...firstTwo,...remaining,lastPerson];
-    console.log(imgArr);
-    
+	const lastPerson = imgArr.find((obj) => obj.personName == 'Vedang Patil');
+	const firstTwo = imgArr.filter((obj) => desiredOrder.includes(obj.personName));
+	const remaining = imgArr.filter(
+		(obj) => !desiredOrder.includes(obj.personName) && obj.personName != 'Vedang Patil'
+	);
+	const newArr = [...firstTwo, ...remaining, lastPerson];
 
 	let isMouseEntered = false;
-	let options = { loop: true, dragFree:true };
+	let options = { loop: true, dragFree: true };
 	let effect;
 	let isMobile = false;
 
@@ -216,14 +216,15 @@
 
 <div class="w-full h-fit themes scale-[0.55] rotate-12">
 	<section class="w-full h-dvh bg-surface border-x-2 border-t-2 flex flex-col">
-		<div class=" font-basebornSans text-6xl uppercase -mb-4 mt-6 ml-2">Tech Summit Leads</div>
-		<div class:embla={!isMobile} use:emblaCarousel={{ options }}>
+		<div class=" font-basebornSans text-2xl self-center -mb-[4.5rem] mt-10 sm:text-6xl uppercase sm:-mb-4 sm:mt-6 sm:ml-2">Tech Summit Leads</div>
+		<div class="embla" use:emblaCarousel={{ options }}>
 			<div class="embla__container">
 				{#each newArr as person}
 					<div class="embla__slide h-fit w-fit">
 						<CardContainer bind:isMouseEntered className="inter-var">
 							<CardBody
-								className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[600px] h-[35rem] rounded-xl p-6 border  "
+								className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]
+								w-[300px] h-[35rem] Smobile:w-[350px] Mmobile:w-[400px] sm:w-[600px] sm:h-[35rem] rounded-xl p-6 border  "
 							>
 								<CardItem
 									{isMouseEntered}
@@ -237,7 +238,7 @@
 										src={person.personImg}
 										class="h-full w-full rounded-xl object-cover group-hover/card:shadow-xl"
 										alt="thumbnail"
-                                        loading="lazy"
+										loading="lazy"
 									/>
 								</CardItem>
 							</CardBody>
@@ -259,5 +260,8 @@
 	.embla__slide {
 		flex: 0 0 45%;
 		min-width: 0;
+		@media screen and (max-width: 479px) {
+			flex: 0 0 100%;
+		}
 	}
 </style>

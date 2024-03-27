@@ -5,8 +5,20 @@
 
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
+	import { page } from '$app/stores';
+	import { signIn,signOut } from '@auth/sveltekit/client';
 	let tl;
 	let isActive = false;
+
+	const handleSignIn = async () => {
+		console.log("Signing IN");
+		await signIn('google',{callbackUrl: '/?signedIn'})
+	};
+
+	const handleSignOut = async () => {
+		console.log("signing Out");
+		await signOut({callbackUrl: '/?signedOut'});
+	};
 
 	function toggleNav() {
 		const nav = document.getElementById('navbar');
@@ -18,7 +30,7 @@
 		// @ts-ignore
 		if (hamburgerBtn.classList.contains('is-active')) {
 			gsap.to(navbar, {
-				top: "-275.15px",
+				top: '-275.15px',
 				duration: 0.6,
 				ease: 'bounce.out'
 			});
@@ -41,7 +53,9 @@
 </script>
 
 <div class="fixed -top-[275.15px] left-0 right-0 z-50" id="navbar">
-	<nav class="w-[18rem] sm:w-[23rem] h-[20rem] flex justify-center items-center ml-auto mr-auto relative">
+	<nav
+		class="w-[18rem] sm:w-[23rem] h-[20rem] flex justify-center items-center ml-auto mr-auto relative"
+	>
 		<div
 			class="w-full h-[12rem] rounded-tl-[40px] rounded-tr-[40px] rounded-br-[20px] rounded-bl-[20px] bg-onPrimaryContainer
   flex justify-center items-center relative z-50"
@@ -58,17 +72,25 @@
 				<div
 					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/" data-replace="Schedule"> <span>Schedule</span></a>
-				</div>
-				<div
-					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
-				>
 					<a href="/events" data-replace="Events"> <span>Events</span></a>
 				</div>
 				<div
 					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
 					<a href="/team" data-replace="Team"> <span>Team</span></a>
+				</div>
+				<div
+					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
+				>
+					{#if !$page.data.session?.user}
+						<button on:click={handleSignIn}>
+							<a data-replace="Login" class="uppercase"> <span>Login</span></a>
+						</button>
+					{:else}
+						<button on:click={handleSignOut}>
+							<a href="/" data-replace="Logout" class="uppercase"> <span>Logout</span></a>
+						</button>
+					{/if}
 				</div>
 			</div>
 		</div>

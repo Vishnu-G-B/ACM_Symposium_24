@@ -10,6 +10,8 @@
 	import emblaCarousel from 'embla-carousel-svelte';
 	import * as THREE from 'three';
 	import NET from 'vanta/dist/vanta.net.min';
+	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 
 	let options = { loop: true };
 	let effect;
@@ -32,6 +34,23 @@
 			color: 0x7accfe,
 			backgroundColor: 0x010f18
 		});
+	}
+	async function showNotif(message) {
+		const notif = document.getElementById('notif');
+		const notifText = document.getElementById('notifText');
+		notifText.innerText = message;
+		gsap.to(notif, {
+			top: '55',
+			duration: 2,
+			ease: 'elastic.inOut(1,0.3)'
+		});
+		setTimeout(() => {
+			gsap.to(notif, {
+				top: '-100%',
+				duration: 3,
+				ease: 'elastic.inOut(1,0.3)'
+			});
+		}, 4000);
 	}
 
 	gsap.registerPlugin(ScrollTrigger);
@@ -102,18 +121,33 @@
 				},
 				'+1.2'
 			);
+			if (browser) {
+				const urlParams = new URLSearchParams(window.location.search);
+				if (urlParams.has('signedIn')) {
+					setTimeout(() => {
+						window.history.pushState({}, document.title, window.location.pathname);
+					}, 1000);
+					showNotif('Logged In!');
+				}
+				if (urlParams.has('signedOut')) {
+					setTimeout(() => {
+						window.history.pushState({}, document.title, window.location.pathname);
+					}, 1000);
+					showNotif('Logged Out!');
+				}
+			}
 			let eg = gsap.timeline({
 				scrollTrigger: {
 					trigger: '.landingPg',
 					start: 'top top',
 					end: 'bottom top',
 					scrub: 1,
-					onLeave: () =>{
-						console.log("Detroying the BG animation now");
-						effect ? effect.destroy() : console.log('effect does not exist apparently')
+					onLeave: () => {
+						console.log('Detroying the BG animation now');
+						effect ? effect.destroy() : console.log('effect does not exist apparently');
 					},
 					onEnterBack: () => {
-						console.log("Redoing the BG animation now");
+						console.log('Redoing the BG animation now');
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
@@ -155,8 +189,8 @@
 				scrollTrigger: {
 					id: 'themes to sched',
 					trigger: '.themes',
-					start: 'center-=20% top',
-					end: vw < 479 ? 'center top' : '',
+					start: 'top+=20% top',
+					end: vw < 479 ? 'center-=20% top' : '',
 					scrub: 1
 				}
 			});
@@ -165,7 +199,7 @@
 				{
 					rotate: 0,
 					scale: 1,
-					y: vw < 479 ? -400 : 0,
+					y: 0,
 					duration: 1
 				},
 				'<'
@@ -190,8 +224,8 @@
 	>
 		<div class="h-full w-full flex justify-around items-center flex-col hidden landing-content">
 			<div
-				class="h-full flex justify-center items-center
-            text-[3rem] Smobile:text-[3.5rem] Mmobile:text-[4rem] sm:text-[6rem] md:text-[6.5rem] lg:text-[9rem] xl:text-[13rem]
+				class="h-full flex justify-center items-center self-center
+            text-[3rem] Smobile:text-[3.5rem] Mmobile:text-[3.7rem] sm:text-[6rem] md:text-[6.5rem] lg:text-[9rem] xl:text-[13rem]
             lg:ml-[20px]
 			-mt-[12rem] sm:-mt-[5rem]
 			overflow-hidden
@@ -241,88 +275,3 @@
 		<StickySchedule />
 	</section>
 </div>
-
-<!-- <div class="w-full h-fit">
-	<section class="w-full h-dvh bg-onSurface border-x-2 border-t-2">
-		<div class="embla" use:emblaCarousel={{ options }}>
-			<div class="embla__container">
-				<div class="embla__slide">
-					<div class="flex h-full w-full items-center justify-center">
-						<PinContainer title="Their linkedin or smthng" href="#">
-							<div
-								class="flex h-[30rem] w-[25rem] basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2"
-							>
-								<h3
-									class="!m-0 max-w-xs text-6xl uppercase tracking-wider font-bold font-humaneThin text-slate-100"
-								>
-									Speaker 1
-								</h3>
-								<div class="!m-0 !p-0 text-base font-normal">
-									<span class="text-slate-500">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus alias
-										expedita, similique cumque repellat voluptatem quia odit temporibus illo.
-										Eligendi accusantium vero nemo deserunt quae quam rerum maxime eos.
-									</span>
-								</div>
-								<div
-									class="mt-4 flex w-full flex-1 rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
-								/>
-							</div>
-						</PinContainer>
-					</div>
-				</div>
-				<div class="embla__slide">
-					<div class="flex h-[40rem] w-full items-center justify-center">
-						<PinContainer title="Their linkedin or smthng" href="#">
-							<div
-								class="flex h-[20rem] w-[20rem] basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2"
-							>
-								<h3 class="!m-0 max-w-xs !pb-2 text-base font-bold text-slate-100">Speaker 1</h3>
-								<div class="!m-0 !p-0 text-base font-normal">
-									<span class="text-slate-500">
-										Short Description of Speaker. Below which is an image or smthng.
-									</span>
-								</div>
-								<div
-									class="mt-4 flex w-full flex-1 rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
-								/>
-							</div>
-						</PinContainer>
-					</div>
-				</div>
-				<div class="embla__slide">
-					<div class="flex h-[40rem] w-full items-center justify-center">
-						<PinContainer title="their linkedin or smthng" href="#">
-							<div
-								class="flex h-[20rem] w-[20rem] basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2"
-							>
-								<h3 class="!m-0 max-w-xs !pb-2 text-base font-bold text-slate-100">Speaker 1</h3>
-								<div class="!m-0 !p-0 text-base font-normal">
-									<span class="text-slate-500">
-										Short Description of Speaker. Below which is an image or smthng.
-									</span>
-								</div>
-								<div
-									class="mt-4 flex w-full flex-1 rounded-lg bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
-								/>
-							</div>
-						</PinContainer>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div> -->
-
-<style>
-	.embla {
-		overflow: hidden;
-	}
-	.embla__container {
-		display: flex;
-	}
-	.embla__slide {
-		flex: 0 0 33%;
-		min-width: 0;
-	}
-</style>

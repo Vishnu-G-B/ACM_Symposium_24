@@ -8,126 +8,19 @@
 	import * as THREE from 'three';
 	import NET from 'vanta/dist/vanta.net.min';
 	import RulebookButton from '$lib/components/rulebookButton.svelte';
+	import { page } from '$app/stores';
 
 	let emblaAPI;
 	let vw;
 	let options = { loop: true, dragFree: true };
 	function onInit(event) {
 		emblaAPI = event.detail;
-		console.log(emblaAPI.slideNodes());
 	}
 
 	gsap.registerPlugin(ScrollTrigger);
-
-	let April10thEvents = [
-		{
-			eventDate: '1O<sup>th</sup>&nbsp;April'
-		},
-		{
-			eventName: 'TECH MUN - Prelims',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '4:30 - 5:30 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'E-Gaming',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '4:30 - 5:30 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Competitive Coding',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '4:30 - 5:30 PM',
-			eventImgSrc: null
-		}
-	];
-	let April12thEvents = [
-		{
-			eventDate: '12<sup>th</sup>&nbsp;April'
-		},
-		{
-			eventName: 'TECH MUN - Finals',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '4:00 - 5:30 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Bears VS Bulls',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '5:30 - 6:30 PM',
-			eventImgSrc: null
-		}
-	];
-
-	let April13thEvents = [
-		{
-			eventDate: '13<sup>th</sup>&nbsp;April'
-		},
-		{
-			eventName: 'Speaker Session 1',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '10:00 - 10:40 AM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Speaker Session 2',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '10:50 - 11:30 AM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Project Showcase',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '11:30 AM - 12:30 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'AI Exhibition',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '11:30 AM - 12:30 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Poster Competition',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '11:30 AM - 12:30 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Quiz',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '2:00 - 4:00 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Life Sized Game',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '2:00 - 4:00 PM',
-			eventImgSrc: null
-		},
-		{
-			eventName: 'Closing Ceremony',
-			eventDesc:
-				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolorem laborum. Mollitia, corrupti quam ratione non optio accusamus amet unde nesciunt repellendus rerum! Quaerat sed consequuntur impedit omnis voluptates.',
-			eventTimings: '4:00 - 8:00 PM',
-			eventImgSrc: null
-		}
-	];
-
-	let events = [April10thEvents, April12thEvents, April13thEvents];
+	export let data;
+	console.log(data);
+	let userEvents = [];
 	let effect;
 	function vanta(node) {
 		let vw = document.getElementById('vw')?.getBoundingClientRect().width;
@@ -152,6 +45,7 @@
 
 	onMount(() => {
 		vw = document.getElementById('vw')?.getBoundingClientRect().width;
+		userEvents = data.userEvents;
 		const ctx = gsap.context(() => {
 			const onLoadTimeline = gsap.timeline();
 			onLoadTimeline.to('.reveal-1', {
@@ -269,6 +163,46 @@
 			});
 		});
 	});
+
+	async function showNotif(message) {
+		const notif = document.getElementById('notif');
+		const notifText = document.getElementById('notifText');
+		notifText.innerText = message;
+		gsap.to(notif, {
+			top: '55',
+			duration: 2,
+			ease: 'elastic.inOut(1,0.3)'
+		});
+		setTimeout(() => {
+			gsap.to(notif, {
+				top: '-100%',
+				duration: 3,
+				ease: 'elastic.inOut(1,0.3)'
+			});
+		}, 4000);
+	}
+
+	async function handleRegisterClick(eventName) {
+		const userEmail = $page.data.session?.user.email;
+		if (userEmail == null) {
+			alert('Not signed in');
+			return;
+		}
+		const res = await fetch('/api/events', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ eventName, userEmail })
+		});
+		const data = await res.json();
+		if (data.status === 200) {
+			userEvents = [...userEvents, eventName]; // Update the userEvents array
+			showNotif(data.body.message);
+		} else {
+			showNotif(data.body.message);
+		}
+	}
 	onDestroy(() => {
 		if (effect) {
 			effect.destroy();
@@ -310,14 +244,14 @@
 	</div>
 </div>
 
-{#each events as daysevent}
+{#each data.events as daysevent}
 	<div
 		class="first-carousel h-full sm:h-screen w-full bg-surface flex justify-center items-center scale-[0.25] sm:scale-[0.55] rotate-[8deg] sm:rotate-[20deg]
-		 sm:border-b-2 sm:border-onSurface sm:border-dashed"
+		sm:border-b-2 sm:border-onSurface sm:border-dashed"
 	>
 		{#if vw < 479}
 			<div class="h-full w-full flex relative">
-				<div class="h-fit w-[10%] self-start text-3xl font-TWK -rotate-90 sticky top-[7rem]">
+				<div class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[8.5rem]">
 					{@html daysevent[0].eventDate}
 				</div>
 				<div class="h-full w-full flex flex-col justify-between items-center -ml-1 pl-1 pr-2">
@@ -325,12 +259,25 @@
 						<div class="card self-center">
 							<div class="card-side front flex justify-start items-end relative">
 								<div class="h-fit w-fit absolute top-1 right-1">
-									<a class="fancy" href="">
-										<span class="top-key"></span>
-										<span class="text">Register Now!</span>
-										<span class="bottom-key-1"></span>
-										<span class="bottom-key-2"></span>
-									</a>
+									{#if userEvents.includes(event.eventName)}
+										<button disabled>
+											<a class="fancy !cursor-default" disabled>
+												<span class="top-key"></span>
+												<span class="text">You're Registered!!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
+									{:else}
+										<button on:click={handleRegisterClick(event.eventName)}>
+											<a class="fancy">
+												<span class="top-key"></span>
+												<span class="text">Register Now!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
+									{/if}
 								</div>
 								<div class="h-fit w-full flex justify-between items-center">
 									<div class=" font-basebornSans text-2xl uppercase">
@@ -383,12 +330,25 @@
 									>
 								</div>
 								<div class="h-fit w-fit absolute bottom-1 right-1">
-									<a class="fancy" href="">
-										<span class="top-key"></span>
-										<span class="text">Register Now!</span>
-										<span class="bottom-key-1"></span>
-										<span class="bottom-key-2"></span>
-									</a>
+									{#if userEvents.includes(event.eventName)}
+										<button disabled>
+											<a class="fancy !cursor-default" disabled>
+												<span class="top-key"></span>
+												<span class="text">You're Registered!!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
+									{:else}
+										<button on:click={handleRegisterClick(event.eventName)}>
+											<a class="fancy">
+												<span class="top-key"></span>
+												<span class="text">Register Now!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
+									{/if}
 								</div>
 							</div>
 						</div>
@@ -397,7 +357,9 @@
 			</div>
 		{:else}
 			<div class="h-full w-full flex flex-col justify-center items-center px-4">
-				<div class=" h-fit w-full text-left pt-8 pl-4 text-5xl font-basebornSans uppercase">
+				<div
+					class=" h-fit w-full text-left pt-8 pl-4 text-5xl -mb-10 z-40 font-basebornSans uppercase"
+				>
 					{@html daysevent[0].eventDate} :
 				</div>
 				<div
@@ -410,12 +372,25 @@
 							<div class="card embla__slide self-center">
 								<div class="card-side front flex justify-start items-end leading-none relative">
 									<div class="h-fit w-fit absolute top-1 right-1">
-										<a class="fancy" href="">
-											<span class="top-key"></span>
-											<span class="text">Register Now!</span>
-											<span class="bottom-key-1"></span>
-											<span class="bottom-key-2"></span>
-										</a>
+										{#if userEvents.includes(event.eventName)}
+											<button disabled>
+												<a class="fancy !cursor-default" disabled>
+													<span class="top-key"></span>
+													<span class="text">You're Registered!!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
+											</button>
+										{:else}
+											<button on:click={handleRegisterClick(event.eventName)}>
+												<a class="fancy">
+													<span class="top-key"></span>
+													<span class="text">Register Now!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
+											</button>
+										{/if}
 									</div>
 									<div class=" font-basebornSans text-3xl uppercase leading-none">
 										{event.eventName} <br />
@@ -445,12 +420,25 @@
 										>
 									</div>
 									<div class="h-fit w-fit absolute bottom-1 right-1">
-										<a class="fancy" href="">
-											<span class="top-key"></span>
-											<span class="text">Register Now!</span>
-											<span class="bottom-key-1"></span>
-											<span class="bottom-key-2"></span>
-										</a>
+										{#if userEvents.includes(event.eventName)}
+											<button disabled>
+												<a class="fancy !cursor-default" disabled>
+													<span class="top-key"></span>
+													<span class="text">You're Registered!!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
+											</button>
+										{:else}
+											<button on:click={handleRegisterClick(event.eventName)}>
+												<a class="fancy">
+													<span class="top-key"></span>
+													<span class="text">Register Now!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
+											</button>
+										{/if}
 									</div>
 								</div>
 							</div>

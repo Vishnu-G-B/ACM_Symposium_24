@@ -35,6 +35,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@auth/core": "^0.27.0",
+		"@auth/mongodb-adapter": "^2.5.1",
+		"@auth/sveltekit": "^0.13.0",
 		"@slidy/animation": "^1.0.8",
 		"@slidy/core": "^3.7.6",
 		"@slidy/easing": "^1.0.6",
@@ -43,6 +46,7 @@
 		"clsx": "^2.1.0",
 		"embla-carousel-svelte": "^8.0.0",
 		"gsap": "^3.12.5",
+		"mongodb": "^6.5.0",
 		"svelte-motion": "^0.12.1",
 		"tailwind-merge": "^2.2.1"
 	}
