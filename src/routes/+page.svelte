@@ -251,7 +251,7 @@
         		-mt-[37rem] sm:-mt-[28rem] lg:-mt-[26rem] xl:-mt-[24rem] lg:ml-[25px] py-1"
 			>
 				<span class="dateSpan block overflow-hidden translate-y-[20rem] py-1 -mb-14 text-center"
-					>APRIL 10<sup>th</sup> ONWARDS,</span
+					>APRIL 8<sup>th</sup> ONWARDS,</span
 				>
 				<br />
 				<span class="dateSpan block overflow-hidden translate-y-[20rem] py-1 text-center"
