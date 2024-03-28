@@ -22,9 +22,9 @@
 					</div>
 				</div>
 				<div class="title-text">
-					<h4 class="large-heading">day 01</h4>
+					<h4 class="large-heading">day O1</h4>
 					<h4 class=" text-onPrimaryContainer !font-basebornSans">
-						ethical AI: Challenges and Opportunities
+						8<sup>th</sup>April, 2O24
 					</h4>
 				</div>
 			</div>
@@ -32,71 +32,28 @@
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">09:00AM</h4>
+					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h4 class="medium-heading !uppercase">welcome</h4>
-						<div class="small-text">by ken maskall</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">09:30am</h4>
-					<div class="rows gap-0-75x">
-						<h5>KEYNOTE ADDRESS</h5>
-						<div class=" font-TWK">
+						<h5 class=" uppercase">Speaker session</h5>
+						<!-- <div class=" font-TWK">
 							Presented by renowned AI leader Ken Maskall, followed by insightful panel discussions
 							and workshops focused on AI ethics, responsible innovation, and the integration of
 							artificial intelligence in various industries.
-						</div>
-						<div class="small-text">by ken maskall</div>
+						</div> -->
+						<div class="small-text">by Ashish Burade</div>
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:00AM</h4>
+					<h4 class="medium-heading">5:3O - 6:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>AI in Education: Shaping the Classroom of Tomorrow</h5>
-						<div class="font-TWK">
+						<h5>Workshop on Prompt Engineering</h5>
+						<!-- <div class="font-TWK">
 							Explore the exciting potential of AI in education, and how it can be used to
 							personalize learning, improve educational outcomes, and create new opportunities for
 							students and educators alike.
-						</div>
-						<div class="small-text">by Laura Davis</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">12:00PM</h4>
-					<div class="rows gap-0-75x">
-						<h4 class="medium-heading">lunch</h4>
-						<div class="small-text">abacus restaruant, exhibition centre.</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">01:30PM</h4>
-					<div class="rows gap-0-75x">
-						<h5>AI for Good: Exploring Sustainable Applications</h5>
-						<div class="font-TWK">
-							In this workshop, we will explore the sustainable applications of AI, including how it
-							can be used to address pressing global challenges, such as climate change, food
-							security, and healthcare, and how it can help organizations build sustainable business
-							models.
-						</div>
-						<div class="small-text">by Aisha Patel</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">03:00PM</h4>
-					<div class="rows gap-0-75x">
-						<h5>Building Trust in AI: Strategies and Best Practices</h5>
-						<div class="font-TWK">
-							We will discuss the challenges and opportunities associated with building trust in AI
-							and provide practical guidance on how to create transparent, explainable, and
-							accountable AI systems.
-						</div>
-						<div class="small-text">by Laura Davis</div>
+						</div> -->
+						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
 				</div>
 			</div>
@@ -117,91 +74,214 @@
 					</div>
 				</div>
 				<div class="title-text">
-					<h4 class="large-heading">day 02</h4>
-					<h4 class="text-onPrimaryContainer">AI in Action: Applications and Case Studies</h4>
+					<h4 class="large-heading">day O2</h4>
+					<h4 class="text-onPrimaryContainer !font-basebornSans">1O<sup>th</sup>April, 2O24</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">09:00AM</h4>
+					<h4 class="medium-heading">4:3O - 6:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h4 class="medium-heading">welcome</h4>
-						<div class="small-text">by ken maskall</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">09:30am</h4>
-					<div class="rows gap-0-75x">
-						<h5>AI and Cybersecurity: Opportunities and Risks</h5>
+						<h5>Trade Sphere</h5>
 						<div class="font-TWK">
-							This talk will explore how AI is changing the cybersecurity landscape and how it can
-							be used to enhance security and protect against cyber threats.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
+							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
+							consectetur, illum consequuntur nemo aliquam saepe quos!
 						</div>
-						<div class="small-text">by ken maskall</div>
+						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:00AM</h4>
+					<h4 class="medium-heading">4:3O - 6:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>The Role of AI in Healthcare Innovation</h5>
+						<h5>Codeverse</h5>
 						<div class="font-TWK">
-							In this workshop, we will explore the latest applications of AI in healthcare, such as
-							personalized medicine, patient monitoring, and disease prevention. We will also
-							discuss the challenges and opportunities associated with integrating AI into
-							healthcare systems, and provide practical guidance on how to develop and deploy
-							AI-powered healthcare solutions that are ethical, transparent, and effective.
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
 						</div>
-						<div class="small-text">by Laura Davis</div>
+						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
 				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">12:00PM</h4>
-					<div class="rows gap-0-75x">
-						<h4 class="medium-heading">lunch</h4>
-						<div class="small-text">abacus restaruant, exhibition centre.</div>
+			</div>
+		</div>
+	</div>
+	<div class="horizontal-line"></div>
+	<div class="container---main">
+		<div class="section-inner has-title">
+			<div class="title-wrapper">
+				<div class="title-graphic">
+					<div class="vertical-line"></div>
+					<div class="vertical-line"></div>
+					<div class="vertical-line"></div>
+					<div class="title">
+						<div class="title-graphic-text-wrapper">
+							<div class="title-graphic-text">schedule</div>
+						</div>
 					</div>
 				</div>
+				<div class="title-text">
+					<h4 class="large-heading">day O3</h4>
+					<h4 class="text-onPrimaryContainer !font-basebornSans">12<sup>th</sup>April, 2O24</h4>
+				</div>
+			</div>
+			<div class="vertical-line"></div>
+			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">01:30PM</h4>
+					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>AI and Business Strategy: Creating Value and Managing Risks</h5>
+						<h5>Bears vs Bulls</h5>
 						<div class="font-TWK">
-							Explore how AI is reshaping business strategy and providing new opportunities for
-							growth and innovation. We will discuss how to leverage AI to create value for
-							customers, optimize business processes, and gain competitive advantage.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
+							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
+							consectetur, illum consequuntur nemo aliquam saepe quos!
 						</div>
-						<div class="small-text">by Aisha Patel</div>
+						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">03:00PM</h4>
+					<h4 class="medium-heading">5:3O - 6:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>The Future of AI</h5>
+						<h5>Trade Sphere - Finals</h5>
 						<div class="font-TWK">
-							This talk will provide a forward-looking perspective on the future of AI and its
-							potential impact on society, industry, and individuals. We will discuss the
-							opportunities and challenges associated with the continued development and deployment
-							of AI, and explore the ethical implications of AI on issues such as employment,
-							privacy, and inequality.
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
 						</div>
-						<div class="small-text">by Laura Davis</div>
+						<!-- <div class="small-text">by Laura Davis</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="horizontal-line"></div>
+	<div class="container---main">
+		<div class="section-inner has-title">
+			<div class="title-wrapper">
+				<div class="title-graphic">
+					<div class="vertical-line"></div>
+					<div class="vertical-line"></div>
+					<div class="vertical-line"></div>
+					<div class="title">
+						<div class="title-graphic-text-wrapper">
+							<div class="title-graphic-text">schedule</div>
+						</div>
+					</div>
+				</div>
+				<div class="title-text">
+					<h4 class="large-heading">day O4</h4>
+					<h4 class="text-onPrimaryContainer !font-basebornSans">13<sup>th</sup>April, 2O24</h4>
+				</div>
+			</div>
+			<div class="vertical-line"></div>
+			<div class="rows gap-1x">
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">10:00 - 10:4Oam</h4>
+					<div class="rows gap-0-75x">
+						<h5 class="!uppercase">Speaker session</h5>
+						<!-- <div class="font-TWK">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
+							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
+							consectetur, illum consequuntur nemo aliquam saepe quos!
+						</div> -->
+						<div class="small-text">by Dr. Prashant Mishra</div>
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">07:00PM</h4>
+					<h4 class="medium-heading">10:5O - 11:3Oam</h4>
 					<div class="rows gap-0-75x">
-						<h4 class="medium-heading">dinner</h4>
-						<div class="small-text">abacus restaruant, exhibition centre.</div>
+						<h5 class="!uppercase">Speaker session</h5>
+						<!-- <div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div> -->
+						<div class="small-text">by Dr. Arulalan Rajan</div>
 					</div>
 				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">11:3Oam - 12:3Opm</h4>
+					<div class="rows gap-0-75x">
+						<h5>Research poster competition</h5>
+						<div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div>
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">O2:00 - O4:00pm</h4>
+					<div class="rows gap-0-75x">
+						<h5>ByteQuest - Tech and Business Quiz</h5>
+						<div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div>
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">O2:00 - O4:00pm</h4>
+					<div class="rows gap-0-75x">
+						<h5>Giant Slides and Tall climbs - Life Sized Game</h5>
+						<div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div>
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">O4:3O - O8:00pm</h4>
+					<div class="rows gap-0-75x">
+						<h4 class="medium-heading !uppercase">Closing ceremony</h4>
+						<!-- <div class="small-text">by ken maskall</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">O4:30 - O5:00pm</h4>
+					<div class="rows gap-0-75x">
+						<h5 class="!uppercase">Prize distribution</h5>
+						<!-- <div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div> -->
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">O5:00 - O8:00pm</h4>
+					<div class="rows gap-0-75x">
+						<h5 class="!uppercase">Movie screening</h5>
+						<!-- <div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div> -->
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
 			</div>
 		</div>
 	</div>
@@ -210,7 +290,11 @@
 		<div class="section-inner cta">
 			<div class="grow-wrapper sticky">
 				<div class="container---m">
-					<h4 class="large-heading cta-heading">Secure Your Seat at the Frontier of AI @MITBLR.</h4>
+					<h4
+						class="large-heading cta-heading !text-[2.4rem] Smobile:!text-[2.9rem] Mmobile:!text-[3.3rem] sm:!text-[6rem] md:!text-[5rem] lg:!text-[6.3rem]"
+					>
+						Secure Your Seat at the Frontier of technology @MITBLR.
+					</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
@@ -291,7 +375,7 @@
 	.fancy .text {
 		font-size: 1.125em;
 		line-height: 1.33333em;
-		font-family: "BaseBornSans","Helvetica";
+		font-family: 'BaseBornSans', 'Helvetica';
 		padding-left: 2em;
 		display: block;
 		text-align: left;
@@ -386,8 +470,8 @@
 	h5 {
 		color: #c6e7ff;
 		font-weight: bold;
-		font-size: 1.3rem;
-		font-family: 'TWK', 'Helvetica';
+		font-size: 2rem;
+		font-family: 'BaseBornSans', 'Helvetica';
 	}
 	div {
 		color: #c6e7ff;
@@ -407,7 +491,7 @@
 			margin-right: auto;
 		}
 		@media screen and (max-width: 479px) {
-			padding-bottom: 48px;
+			padding-bottom: 12px;
 			padding-left: 12px;
 			padding-right: 12px;
 		}
@@ -599,8 +683,8 @@
 		}
 	}
 	.medium-heading {
-		font-family: "BaseBornSans","Helvetica";
-		font-size: 3rem;
+		font-family: 'BaseBornSans', 'Helvetica';
+		font-size: 2.8rem;
 		line-height: 1.1em;
 		color: #c6e7ff;
 		@media screen and (max-width: 479px) {

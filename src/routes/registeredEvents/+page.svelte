@@ -8,7 +8,7 @@
 	import * as THREE from 'three';
 	import NET from 'vanta/dist/vanta.net.min';
 	import RulebookButton from '$lib/components/rulebookButton.svelte';
-	import { page } from '$app/stores';
+	import Empty from '$lib/components/empty.svelte';
 
 	let emblaAPI;
 	let vw;
@@ -20,7 +20,6 @@
 	gsap.registerPlugin(ScrollTrigger);
 	export let data;
 	console.log(data);
-	let userEvents = [];
 	let effect;
 	function vanta(node) {
 		let vw = document.getElementById('vw')?.getBoundingClientRect().width;
@@ -45,7 +44,6 @@
 
 	onMount(() => {
 		vw = document.getElementById('vw')?.getBoundingClientRect().width;
-		userEvents = data.userEvents;
 		const ctx = gsap.context(() => {
 			const onLoadTimeline = gsap.timeline();
 			onLoadTimeline.to('.reveal-1', {
@@ -181,28 +179,6 @@
 			});
 		}, 4000);
 	}
-
-	async function handleRegisterClick(eventName) {
-		const userEmail = $page.data.session?.user.email;
-		if (userEmail == null) {
-			showNotif("Please Sign in to Register!");
-			return;
-		}
-		const res = await fetch('/api/events', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({ eventName, userEmail })
-		});
-		const data = await res.json();
-		if (data.status === 200) {
-			userEvents = [...userEvents, eventName]; // Update the userEvents array
-			showNotif(data.body.message);
-		} else {
-			showNotif(data.body.message);
-		}
-	}
 	onDestroy(() => {
 		if (effect) {
 			effect.destroy();
@@ -223,191 +199,106 @@
 		>
 			<div class="h-full w-full flex justify-around items-center flex-col hidden landing-content">
 				<div
-					class="h-full flex justify-center items-center
-            text-[4rem] Smobile:text-[5rem] Mmobile:text-[6rem] sm:text-[6rem] md:text-[7rem] lg:text-[9rem] xl:text-[13rem]
-            ml-4 lg:ml-[20px]
+					class="h-full flex flex-col sm:flex-row justify-center items-center
+            text-[3rem] Smobile:text-[3rem] Mmobile:text-[3.5rem] sm:text-[3.5rem] md:text-[4.31rem] lg:text-[5.54rem] xl:text-[8rem]
+        	lg:ml-[20px]
 			-mt-[12rem] sm:-mt-[5rem]
-			overflow-hidden
              font-normal font-basebornSans text-onPrimaryContainer
 			textFlyin1"
 					style="text-align: center;"
 				>
-					<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
-					<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">V</span>
-					<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
-					<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">N</span>
-					<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">T</span>
-					<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">S</span>
+					<div class="flex justify-center items-center">
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">R</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">G</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">I</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">S</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">T</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">R</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">D</span>
+					</div>
+					<div class="flex justify-center items-center -mb-[13rem] sm:-ml-[20.5rem]">
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">V</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">E</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">N</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">T</span>
+						<span class="textSpan text-inherit overflow-hidden translate-y-[100vh]">S</span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-{#each data.events as daysevent}
-	<div
-		class="first-carousel h-full sm:h-screen w-full bg-surface flex justify-center items-center scale-[0.25] sm:scale-[0.55] rotate-[8deg] sm:rotate-[20deg]
+{#if data.signedIn == true}
+	{#if data.events.length > 0}
+		<div
+			class="first-carousel h-full sm:h-screen w-full bg-surface flex justify-center items-center scale-[0.25] sm:scale-[0.55] rotate-[8deg] sm:rotate-[20deg]
 		sm:border-b-2 sm:border-onSurface sm:border-dashed"
-	>
-		{#if vw < 479}
-			<div class="h-full w-full flex relative">
-				<div class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[8.5rem]">
-					{@html daysevent[0].eventDate}
-				</div>
-				<div class="h-full w-full flex flex-col justify-between items-center -ml-1 pl-1 pr-2">
-					{#each daysevent.slice(1) as event}
-						<div class="card self-center">
-							<div class="card-side front flex justify-start items-end relative">
-								<div class="h-fit w-fit absolute top-1 right-1">
-									{#if userEvents.includes(event.eventName)}
-										<button disabled>
-											<a class="fancy !cursor-default" disabled>
-												<span class="top-key"></span>
-												<span class="text">You're Registered!!</span>
-												<span class="bottom-key-1"></span>
-												<span class="bottom-key-2"></span>
-											</a>
-										</button>
-									{:else}
-										<button on:click={handleRegisterClick(event.eventName)}>
-											<a class="fancy">
-												<span class="top-key"></span>
-												<span class="text">Register Now!</span>
-												<span class="bottom-key-1"></span>
-												<span class="bottom-key-2"></span>
-											</a>
-										</button>
-									{/if}
-								</div>
-								<div class="h-fit w-full flex justify-between items-center">
-									<div class=" font-basebornSans text-2xl uppercase">
-										{event.eventName}<br />
-										<span class=" font-TWK text-sm uppercase leading-none block"
-											>{event.eventTimings}</span
-										>
-									</div>
-									<div>
-										<button
-											title="Add New"
-											class="group cursor-pointer outline-none hover:rotate-90 duration-300"
-										>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="50px"
-												height="50px"
-												viewBox="0 0 24 24"
-												class="stroke-zinc-400 fill-none group-hover:fill-zinc-800 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300"
-											>
-												<path
-													d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-													stroke-width="1.5"
-												></path>
-												<path d="M8 12H16" stroke-width="1.5"></path>
-												<path d="M12 16V8" stroke-width="1.5"></path>
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="card-side back flex flex-col justify-start items-start relative">
-								<div class=" font-basebornSans text-2xl uppercase">About The Event :</div>
-								<div class=" font-subjectivityMedSlant text-sm">
-									{event.eventDesc}
-								</div>
-								<div class=" border-2 border-white mt-4 mb-4">
-									<RulebookButton />
-								</div>
-								<div class=" font-basebornSans text-[1.75rem] uppercase">Prize Pool :</div>
-								<div class="flex flex-col justify-between items-center flex-nowrap gap-2">
-									<span class="block font-subjectivityMedSlant text-lg">
-										1<sup>st</sup>- ₹6,000</span
-									>
-									<span class="block font-subjectivityMedSlant text-lg">
-										2<sup>nd</sup>- ₹4,000</span
-									>
-									<span class="block font-subjectivityMedSlant text-lg">
-										3<sup>rd</sup>- ₹2,000</span
-									>
-								</div>
-								<div class="h-fit w-fit absolute bottom-1 right-1">
-									{#if userEvents.includes(event.eventName)}
-										<button disabled>
-											<a class="fancy !cursor-default" disabled>
-												<span class="top-key"></span>
-												<span class="text">You're Registered!!</span>
-												<span class="bottom-key-1"></span>
-												<span class="bottom-key-2"></span>
-											</a>
-										</button>
-									{:else}
-										<button on:click={handleRegisterClick(event.eventName)}>
-											<a class="fancy">
-												<span class="top-key"></span>
-												<span class="text">Register Now!</span>
-												<span class="bottom-key-1"></span>
-												<span class="bottom-key-2"></span>
-											</a>
-										</button>
-									{/if}
-								</div>
-							</div>
-						</div>
-					{/each}
-				</div>
-			</div>
-		{:else}
-			<div class="h-full w-full flex flex-col justify-center items-center px-4">
-				<div
-					class=" h-fit w-full text-left pt-8 pl-4 text-5xl -mb-10 z-40 font-basebornSans uppercase"
-				>
-					{@html daysevent[0].eventDate} :
-				</div>
-				<div
-					class="h-full w-full bg-surface z-10 embla"
-					use:emblaCarousel={{ options }}
-					on:emblaInit={onInit}
-				>
-					<div class="h-full w-full z-10 embla__container">
-						{#each daysevent.slice(1) as event}
-							<div class="card embla__slide self-center">
-								<div class="card-side front flex justify-start items-end leading-none relative">
+		>
+			{#if vw < 479}
+				<div class="h-full w-full flex relative">
+					<div
+						class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[8.5rem]"
+					>
+						Your Events!
+					</div>
+					<div class="h-full w-full flex flex-col justify-between items-center -ml-1 pl-1 pr-2">
+						{#each data.events as event}
+							<div class="card self-center">
+								<div class="card-side front flex justify-start items-end relative">
 									<div class="h-fit w-fit absolute top-1 right-1">
-										{#if userEvents.includes(event.eventName)}
-											<button disabled>
-												<a class="fancy !cursor-default" disabled>
-													<span class="top-key"></span>
-													<span class="text">You're Registered!!</span>
-													<span class="bottom-key-1"></span>
-													<span class="bottom-key-2"></span>
-												</a>
-											</button>
-										{:else}
-											<button on:click={handleRegisterClick(event.eventName)}>
-												<a class="fancy">
-													<span class="top-key"></span>
-													<span class="text">Register Now!</span>
-													<span class="bottom-key-1"></span>
-													<span class="bottom-key-2"></span>
-												</a>
-											</button>
-										{/if}
+										<button disabled>
+											<a class="fancy !cursor-default" disabled>
+												<span class="top-key"></span>
+												<span class="text">You're Registered!!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
 									</div>
-									<div class=" font-basebornSans text-3xl uppercase leading-none">
-										{event.eventName} <br />
-										<span class=" font-TWK text-lg uppercase leading-none block"
-											>{event.eventTimings}</span
-										>
+									<div class="h-fit w-full flex justify-between items-center">
+										<div class=" font-basebornSans text-2xl uppercase">
+											{event.eventName}<br />
+											<span class=" font-TWK text-sm uppercase leading-none block"
+												>{event.eventTimings}</span
+											>
+										</div>
+										<div>
+											<button
+												title="Add New"
+												class="group cursor-pointer outline-none hover:rotate-90 duration-300"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="50px"
+													height="50px"
+													viewBox="0 0 24 24"
+													class="stroke-zinc-400 fill-none group-hover:fill-zinc-800 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300"
+												>
+													<path
+														d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+														stroke-width="1.5"
+													></path>
+													<path d="M8 12H16" stroke-width="1.5"></path>
+													<path d="M12 16V8" stroke-width="1.5"></path>
+												</svg>
+											</button>
+										</div>
 									</div>
 								</div>
 								<div class="card-side back flex flex-col justify-start items-start relative">
-									<div class=" font-basebornSans text-4xl uppercase">About The Event :</div>
-									<div class=" font-subjectivityMedSlant text-md">
+									<div class=" font-basebornSans text-2xl uppercase">About The Event :</div>
+									<div class=" font-subjectivityMedSlant text-sm">
 										{event.eventDesc}
 									</div>
 									<div class=" border-2 border-white mt-4 mb-4">
 										<RulebookButton />
 									</div>
-									<div class=" font-basebornSans text-4xl uppercase">Prize Pool :</div>
+									<div class=" font-basebornSans text-[1.75rem] uppercase">Prize Pool :</div>
 									<div class="flex flex-col justify-between items-center flex-nowrap gap-2">
 										<span class="block font-subjectivityMedSlant text-lg">
 											1<sup>st</sup>- ₹6,000</span
@@ -420,7 +311,37 @@
 										>
 									</div>
 									<div class="h-fit w-fit absolute bottom-1 right-1">
-										{#if userEvents.includes(event.eventName)}
+										<button disabled>
+											<a class="fancy !cursor-default" disabled>
+												<span class="top-key"></span>
+												<span class="text">You're Registered!!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
+									</div>
+								</div>
+							</div>
+						{/each}
+					</div>
+				</div>
+			{:else}
+				<div class="h-full w-full flex flex-col justify-center items-center px-4">
+					<div
+						class=" h-fit w-full text-left pt-8 pl-4 text-5xl -mb-10 z-40 font-basebornSans uppercase"
+					>
+						Your Events!
+					</div>
+					<div
+						class="h-full w-full bg-surface z-10 embla"
+						use:emblaCarousel={{ options }}
+						on:emblaInit={onInit}
+					>
+						<div class="h-full w-full z-10 embla__container">
+							{#each data.events as event}
+								<div class="card embla__slide self-center">
+									<div class="card-side front flex justify-start items-end leading-none relative">
+										<div class="h-fit w-fit absolute top-1 right-1">
 											<button disabled>
 												<a class="fancy !cursor-default" disabled>
 													<span class="top-key"></span>
@@ -429,26 +350,114 @@
 													<span class="bottom-key-2"></span>
 												</a>
 											</button>
-										{:else}
-											<button on:click={handleRegisterClick(event.eventName)}>
-												<a class="fancy">
+										</div>
+										<div class=" font-basebornSans text-3xl uppercase leading-none">
+											{event.eventName} <br />
+											<span class=" font-TWK text-lg uppercase leading-none block"
+												>{event.eventTimings}</span
+											>
+										</div>
+									</div>
+									<div class="card-side back flex flex-col justify-start items-start relative">
+										<div class=" font-basebornSans text-4xl uppercase">About The Event :</div>
+										<div class=" font-subjectivityMedSlant text-md">
+											{event.eventDesc}
+										</div>
+										<div class=" border-2 border-white mt-4 mb-4">
+											<RulebookButton />
+										</div>
+										<div class=" font-basebornSans text-4xl uppercase">Prize Pool :</div>
+										<div class="flex flex-col justify-between items-center flex-nowrap gap-2">
+											<span class="block font-subjectivityMedSlant text-lg">
+												1<sup>st</sup>- ₹6,000</span
+											>
+											<span class="block font-subjectivityMedSlant text-lg">
+												2<sup>nd</sup>- ₹4,000</span
+											>
+											<span class="block font-subjectivityMedSlant text-lg">
+												3<sup>rd</sup>- ₹2,000</span
+											>
+										</div>
+										<div class="h-fit w-fit absolute bottom-1 right-1">
+											<button disabled>
+												<a class="fancy !cursor-default" disabled>
 													<span class="top-key"></span>
-													<span class="text">Register Now!</span>
+													<span class="text">You're Registered!!</span>
 													<span class="bottom-key-1"></span>
 													<span class="bottom-key-2"></span>
 												</a>
 											</button>
-										{/if}
+										</div>
 									</div>
 								</div>
+							{/each}
+						</div>
+					</div>
+				</div>
+			{/if}
+		</div>
+	{:else}
+		<!-- show user needs to register for events text here -->
+		<div
+			class="first-carousel h-full sm:h-screen w-full bg-surface flex justify-center items-center scale-[0.25] sm:scale-[0.55] rotate-[8deg] sm:rotate-[20deg]
+		sm:border-b-2 sm:border-onSurface sm:border-dashed"
+		>
+			<div class="h-full w-full flex flex-col justify-center items-center px-4">
+				<div
+					class=" h-fit w-full text-left pt-8 pl-4 text-5xl mb-6 z-40 font-basebornSans uppercase"
+				>
+					Your Events??
+				</div>
+				<div class="h-full w-full bg-surface z-10 self-center">
+					<div class="h-full w-full z-10 flex justify-center items-center">
+						<div class="card self-center !ml-0 !mr-0 !max-w-[100%] sm:!max-w-[80%]">
+							<div class="card-side front flex justify-center items-center leading-none relative">
+								<div class="h-fit w-fit absolute top-1 right-1">
+									<button>
+										<a class="fancy !cursor-default" href="/events">
+											<span class="top-key"></span>
+											<span class="text">Register Now!!</span>
+											<span class="bottom-key-1"></span>
+											<span class="bottom-key-2"></span>
+										</a>
+									</button>
+								</div>
+								<div class=" font-basebornSans text-2xl sm:text-3xl uppercase leading-none">
+									WoW, such empty!
+								</div>
 							</div>
-						{/each}
+							<div class="card-side back flex flex-col justify-center items-center relative">
+								<div class=" font-basebornSans text-2xl sm:text-4xl uppercase text-center">
+									We have a vast array of events lined up!<br /> There is something for everyone
+									don't miss out!<br /> Register Now!!
+								</div>
+								<div class="h-fit w-fit absolute bottom-1 right-1">
+									<button>
+										<a class="fancy !cursor-default" href="/events">
+											<span class="top-key"></span>
+											<span class="text">Register Now!!</span>
+											<span class="bottom-key-1"></span>
+											<span class="bottom-key-2"></span>
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		{/if}
+		</div>
+	{/if}
+{:else}
+	<div class="relative w-full h-full overflow-hidden">
+		<Empty
+			errorText="Looks Like you're not signed in!"
+			errorPara="Please Login so that you can access the events that you have registered for!"
+			errorLink="/"
+			errorLinkText="Home"
+		/>
 	</div>
-{/each}
+{/if}
 
 <style>
 	.card {

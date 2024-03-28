@@ -27,7 +27,7 @@ export default {
         subjectivityMedSlant: ["Subjectivity-medSlant", "Helvetica"],
         humaneSemiBold: ["Humane-SemiBold","Helvetica"],
         basebornSans: ["BaseBornSans","Helvetica"],
-        TWK: ["TWL","Helvetica"]
+        TWK: ["TWK","Helvetica"]
       },
     },
   },

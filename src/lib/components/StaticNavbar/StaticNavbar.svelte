@@ -6,18 +6,18 @@
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
 	import { page } from '$app/stores';
-	import { signIn,signOut } from '@auth/sveltekit/client';
+	import { signIn, signOut } from '@auth/sveltekit/client';
 	let tl;
 	let isActive = false;
 
 	const handleSignIn = async () => {
-		console.log("Signing IN");
-		await signIn('google',{callbackUrl: '/?signedIn'})
+		console.log('Signing IN');
+		await signIn('google', { callbackUrl: '/?signedIn' });
 	};
 
 	const handleSignOut = async () => {
-		console.log("signing Out");
-		await signOut({callbackUrl: '/?signedOut'});
+		console.log('signing Out');
+		await signOut({ callbackUrl: '/?signedOut' });
 	};
 
 	function toggleNav() {
@@ -65,22 +65,27 @@
     w-full h-full pl-8 pr-8 absolute z-[49] mt-5"
 			>
 				<div
-					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
+					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
 					<a href="/" data-replace="Home"> <span>Home</span></a>
 				</div>
 				<div
-					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
+					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
 					<a href="/events" data-replace="Events"> <span>Events</span></a>
 				</div>
 				<div
-					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
+					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
+				>
+					<a href="/registeredEvents" data-replace="My Events"> <span>My&nbsp;Events</span></a>
+				</div>
+				<div
+					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
 					<a href="/team" data-replace="Team"> <span>Team</span></a>
 				</div>
 				<div
-					class="w-full h-fit text-center mb-1 text-3xl uppercase font-subjectivityMedSlant tracking-widest"
+					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
 					{#if !$page.data.session?.user}
 						<button on:click={handleSignIn}>
