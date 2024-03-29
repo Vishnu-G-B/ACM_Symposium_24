@@ -185,7 +185,7 @@
 	async function handleRegisterClick(eventName) {
 		const userEmail = $page.data.session?.user.email;
 		if (userEmail == null) {
-			showNotif("Please Sign in to Register!");
+			showNotif('Please Sign in to Register!');
 			return;
 		}
 		const res = await fetch('/api/events', {
@@ -254,7 +254,9 @@
 	>
 		{#if vw < 479}
 			<div class="h-full w-full flex relative">
-				<div class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[8.5rem]">
+				<div
+					class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[8.5rem]"
+				>
 					{@html daysevent[0].eventDate}
 				</div>
 				<div class="h-full w-full flex flex-col justify-between items-center -ml-1 pl-1 pr-2">
@@ -267,6 +269,15 @@
 											<a class="fancy !cursor-default" disabled>
 												<span class="top-key"></span>
 												<span class="text">You're Registered!!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
+									{:else if !event.registerable}
+										<button disabled class="hidden">
+											<a class="fancy !cursor-default" disabled>
+												<span class="top-key"></span>
+												<span class="text">registerable</span>
 												<span class="bottom-key-1"></span>
 												<span class="bottom-key-2"></span>
 											</a>
@@ -343,6 +354,15 @@
 												<span class="bottom-key-2"></span>
 											</a>
 										</button>
+									{:else if !event.registerable}
+										<button disabled class="hidden">
+											<a class="fancy !cursor-default" disabled>
+												<span class="top-key"></span>
+												<span class="text">registerable</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
+										</button>
 									{:else}
 										<button on:click={handleRegisterClick(event.eventName)}>
 											<a class="fancy">
@@ -381,6 +401,15 @@
 												<a class="fancy !cursor-default" disabled>
 													<span class="top-key"></span>
 													<span class="text">You're Registered!!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
+											</button>
+										{:else if !event.registerable}
+											<button disabled class="hidden">
+												<a class="fancy !cursor-default" disabled>
+													<span class="top-key"></span>
+													<span class="text">registerable</span>
 													<span class="bottom-key-1"></span>
 													<span class="bottom-key-2"></span>
 												</a>
@@ -429,6 +458,15 @@
 												<a class="fancy !cursor-default" disabled>
 													<span class="top-key"></span>
 													<span class="text">You're Registered!!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
+											</button>
+										{:else if !event.registerable}
+											<button disabled class="hidden">
+												<a class="fancy !cursor-default" disabled>
+													<span class="top-key"></span>
+													<span class="text">registerable</span>
 													<span class="bottom-key-1"></span>
 													<span class="bottom-key-2"></span>
 												</a>
@@ -496,16 +534,16 @@
 		background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 	}
 
-	/* .card:hover .card-side.front {
+	.card:hover .card-side.front {
 		transform: rotateY(180deg);
 	}
 
 	.card:hover .card-side.back {
 		transform: rotateY(0deg);
-	} */
+	}
 
 	/* Vendor prefixes */
-	/* @supports (-webkit-backface-visibility: hidden) or (backface-visibility: hidden) {
+	@supports (-webkit-backface-visibility: hidden) or (backface-visibility: hidden) {
 		.card-side {
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
@@ -530,7 +568,7 @@
 			-webkit-transform: rotateY(0deg);
 			transform: rotateY(0deg);
 		}
-	} */
+	}
 	.embla {
 		overflow: hidden;
 	}
