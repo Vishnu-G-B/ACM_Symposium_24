@@ -43,6 +43,7 @@
 	}
 
 	onMount(() => {
+		window.scrollTo(0,0);
 		vw = document.getElementById('vw')?.getBoundingClientRect().width;
 		const ctx = gsap.context(() => {
 			const onLoadTimeline = gsap.timeline();

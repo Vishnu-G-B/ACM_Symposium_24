@@ -345,9 +345,11 @@
 								<div class=" font-subjectivityMedSlant text-sm">
 									{event.eventDesc}
 								</div>
-								<div class=" border-2 border-white mt-4 mb-4">
-									<RulebookButton />
-								</div>
+								{#if !noRulebook.includes(event.eventName)}
+									<div class=" border-2 border-white mt-4 mb-4">
+										<RulebookButton link={event.rulebookLink}/>
+									</div>
+								{/if}
 								<div class=" font-basebornSans text-[1.75rem] uppercase">Prize Pool :</div>
 								<div class="flex flex-col justify-between items-center flex-nowrap gap-2">
 									<span class="block font-subjectivityMedSlant text-lg">
@@ -469,7 +471,7 @@
 									</div>
 									{#if !noRulebook.includes(event.eventName)}
 										<div class=" border-2 border-white mt-4 mb-4">
-											<RulebookButton />
+											<RulebookButton link={event.rulebookLink}/>
 										</div>
 									{/if}
 									<div class=" font-basebornSans text-4xl uppercase">

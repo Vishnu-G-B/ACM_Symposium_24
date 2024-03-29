@@ -1,4 +1,14 @@
-<button class="button" data-text="Awesome">
+<script>
+	export let link = "";
+	
+	function redirectToLink(){
+		if(link) {
+			window.location.href = link;
+		}	
+	}
+</script>
+
+<button class="button" data-text="Awesome" on:click={redirectToLink}>
 	<span class="actual-text">&nbsp;Rule&nbsp;Book&nbsp;</span>
 	<span aria-hidden="true" class="hover-text">&nbsp;Rule&nbsp;Book&nbsp;</span>
 </button>

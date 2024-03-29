@@ -55,6 +55,7 @@
 
 	gsap.registerPlugin(ScrollTrigger);
 	onMount(() => {
+		window.scrollTo(0,0)
 		let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 		const ctx = gsap.context(() => {
 			const onLoadTimeline = gsap.timeline();
