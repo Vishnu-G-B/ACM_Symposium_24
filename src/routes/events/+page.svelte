@@ -128,7 +128,7 @@
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
-							el: ".HeroBGAnim",
+							el: '.HeroBGAnim',
 							THREE: THREE,
 							mouseControls: true,
 							touchControls: true,
@@ -311,7 +311,7 @@
 								</div>
 								<div class="h-fit w-full flex justify-between items-center">
 									<div class=" font-basebornSans text-2xl uppercase">
-										{event.eventName}<br />
+										{@html event.eventName}<br />
 										<span class=" font-TWK text-sm uppercase leading-none block"
 											>{event.eventTimings}</span
 										>
@@ -341,26 +341,29 @@
 								</div>
 							</div>
 							<div class="card-side back flex flex-col justify-start items-start relative">
+								<div
+									class="w-full h-fit font-basebornSans text-2xl uppercase text-center self-center
+								mb-2"
+								>
+									{event.eventName}
+								</div>
 								<div class=" font-basebornSans text-2xl uppercase">About The Event :</div>
 								<div class=" font-subjectivityMedSlant text-sm">
 									{event.eventDesc}
 								</div>
 								{#if !noRulebook.includes(event.eventName)}
-									<div class=" border-2 border-white mt-4 mb-4">
+									<div class=" border-2 border-white mt-2 mb-2">
 										<RulebookButton link={event.rulebookLink} />
 									</div>
 								{/if}
-								<div class=" font-basebornSans text-[1.75rem] uppercase">Prize Pool :</div>
+								<div class=" font-basebornSans text-3xl uppercase">
+									{event.prizes.length > 0 ? 'Prize Pool :' : ''}
+								</div>
 								<div class="flex flex-col justify-between items-center flex-nowrap gap-2">
-									<span class="block font-subjectivityMedSlant text-lg">
-										1<sup>st</sup>- ₹6,000</span
-									>
-									<span class="block font-subjectivityMedSlant text-lg">
-										2<sup>nd</sup>- ₹4,000</span
-									>
-									<span class="block font-subjectivityMedSlant text-lg">
-										3<sup>rd</sup>- ₹2,000</span
-									>
+									{#each event.prizes as prize}
+										<!-- content here -->
+										<span class="block font-subjectivityMedSlant text-lg"> {@html prize}</span>
+									{/each}
 								</div>
 								<div class="h-fit w-fit absolute bottom-1 right-1">
 									{#if userEvents.includes(event.eventName)}
