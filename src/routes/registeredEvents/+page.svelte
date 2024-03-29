@@ -126,7 +126,7 @@
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
-							el: node,
+							el: ".HeroBGAnim",
 							THREE: THREE,
 							mouseControls: true,
 							touchControls: true,
