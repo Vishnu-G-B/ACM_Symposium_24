@@ -211,7 +211,7 @@
 				<div
 					class="columns schedule-column border-2 border-onPrimaryContainer rounded-md border-dashed p-2 sm:p-0 sm:border-0"
 				>
-					<h4 class="medium-heading !text-center whitespace-nowrap sm:whitespace-normal">
+					<h4 class="medium-heading !text-center  sm:whitespace-normal">
 						11:3Oam - 12:3Opm
 					</h4>
 					<div class="rows gap-0-75x">
@@ -272,7 +272,7 @@
 					<h4 class="medium-heading !text-center sm:!text-left">O4:3O - O8:00pm</h4>
 					<div class="rows gap-0-75x">
 						<h4
-							class="medium-heading !uppercase !whitespace-nowrap !text-center !text-[2.2rem] sm:!text-[2.8rem]"
+							class="medium-heading !uppercase  !text-center !text-[2.2rem] sm:!text-[2.8rem]"
 						>
 							Closing ceremony
 						</h4>
