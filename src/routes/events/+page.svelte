@@ -471,6 +471,13 @@
 													<span class="bottom-key-2"></span>
 												</a>
 											</button>
+										{:else if event.eventName == "Research Poster Competition"}
+												<a class="fancy" href={event.eventImgSrc}>
+													<span class="top-key"></span>
+													<span class="text">Register Now!</span>
+													<span class="bottom-key-1"></span>
+													<span class="bottom-key-2"></span>
+												</a>
 										{:else}
 											<button on:click={handleRegisterClick(event.eventName)}>
 												<a class="fancy">

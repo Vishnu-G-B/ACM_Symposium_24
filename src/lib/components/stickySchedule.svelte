@@ -99,9 +99,9 @@
 					<div class="rows gap-0-75x">
 						<h5>Codeverse</h5>
 						<div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
+							Embark on the Coding Challenge 2024: Tackle 10 coding problems in 3 hours. Form teams
+							of three with one computer each. The team solving the most questions claims victory,
+							with runners-up awarded 2nd and 3rd place. Limited to 15 teams.
 						</div>
 						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
@@ -260,10 +260,9 @@
 					<div class="rows gap-0-75x">
 						<h5>Giant Slides and Tall Climbs</h5>
 						<div class="font-TWK">
-							Experience the life-sized Snake and Ladders: Uniting educators for
-							team-building and fun! Gather with excitement area as participants embark on this
-							adventure. Engage in friendly competition, strengthen bonds, and enjoy the
-							larger-than-life board and dice!
+							Experience the life-sized Snake and Ladders: Uniting educators for team-building and
+							fun! Gather with excitement area as participants embark on this adventure. Engage in
+							friendly competition, strengthen bonds, and enjoy the larger-than-life board and dice!
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
