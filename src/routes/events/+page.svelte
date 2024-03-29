@@ -30,14 +30,14 @@
 			THREE: THREE,
 			mouseControls: true,
 			touchControls: true,
-			gyroControls: false,
+			gyroControls: vw < 479 ? true : false,
 			minHeight: vh,
 			minWidth: vw,
 			scale: 1.0,
 			scaleMobile: 1.0,
-			points: 13.0,
-			maxDistance: 20.0,
-			sapcing: 18.0,
+			points: vw < 479 ? 8.0 : 13.0,
+			maxDistance: vw < 479 ? 15.0 : 20.0,
+			spacing: vw < 479 ? 15.0 : 18.0,
 			color: 0x7accfe,
 			backgroundColor: 0x010f18
 		});
@@ -128,18 +128,18 @@
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
-							el: '.HeroBGAnim',
+							el: node,
 							THREE: THREE,
 							mouseControls: true,
 							touchControls: true,
-							gyroControls: false,
+							gyroControls: vw < 479 ? true : false,
 							minHeight: vh,
 							minWidth: vw,
 							scale: 1.0,
 							scaleMobile: 1.0,
-							points: 13.0,
-							maxDistance: 20.0,
-							sapcing: 18.0,
+							points: vw < 479 ? 8.0 : 13.0,
+							maxDistance: vw < 479 ? 15.0 : 20.0,
+							spacing: vw < 479 ? 15.0 : 18.0,
 							color: 0x7accfe,
 							backgroundColor: 0x010f18
 						});
@@ -347,7 +347,7 @@
 								</div>
 								{#if !noRulebook.includes(event.eventName)}
 									<div class=" border-2 border-white mt-4 mb-4">
-										<RulebookButton link={event.rulebookLink}/>
+										<RulebookButton link={event.rulebookLink} />
 									</div>
 								{/if}
 								<div class=" font-basebornSans text-[1.75rem] uppercase">Prize Pool :</div>
@@ -471,7 +471,7 @@
 									</div>
 									{#if !noRulebook.includes(event.eventName)}
 										<div class=" border-2 border-white mt-4 mb-4">
-											<RulebookButton link={event.rulebookLink}/>
+											<RulebookButton link={event.rulebookLink} />
 										</div>
 									{/if}
 									<div class=" font-basebornSans text-4xl uppercase">

@@ -29,21 +29,21 @@
 			THREE: THREE,
 			mouseControls: true,
 			touchControls: true,
-			gyroControls: false,
+			gyroControls: vw < 479 ? true : false,
 			minHeight: vh,
 			minWidth: vw,
 			scale: 1.0,
 			scaleMobile: 1.0,
-			points: 13.0,
-			maxDistance: 20.0,
-			sapcing: 18.0,
+			points: vw < 479 ? 8.0 : 13.0,
+			maxDistance: vw < 479 ? 15.0 : 20.0,
+			spacing: vw < 479 ? 15.0 : 18.0,
 			color: 0x7accfe,
 			backgroundColor: 0x010f18
 		});
 	}
 
 	onMount(() => {
-		window.scrollTo(0,0);
+		window.scrollTo(0, 0);
 		vw = document.getElementById('vw')?.getBoundingClientRect().width;
 		const ctx = gsap.context(() => {
 			const onLoadTimeline = gsap.timeline();
@@ -126,18 +126,18 @@
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
-							el: '.HeroBGAnim',
+							el: node,
 							THREE: THREE,
 							mouseControls: true,
 							touchControls: true,
-							gyroControls: false,
+							gyroControls: vw < 479 ? true : false,
 							minHeight: vh,
 							minWidth: vw,
 							scale: 1.0,
 							scaleMobile: 1.0,
-							points: 13.0,
-							maxDistance: 20.0,
-							sapcing: 18.0,
+							points: vw < 479 ? 8.0 : 13.0,
+							maxDistance: vw < 479 ? 15.0 : 20.0,
+							spacing: vw < 479 ? 15.0 : 18.0,
 							color: 0x7accfe,
 							backgroundColor: 0x010f18
 						});
@@ -405,7 +405,7 @@
 		>
 			<div class="h-full w-full flex flex-col justify-center items-center px-4">
 				<div
-					class=" h-fit w-full text-left pt-8 sm:pl-4 text-3xl text-center sm:text-5xl  sm:mb-6 z-40 font-basebornSans uppercase"
+					class=" h-fit w-full text-left pt-8 sm:pl-4 text-3xl text-center sm:text-5xl sm:mb-6 z-40 font-basebornSans uppercase"
 				>
 					Your Events??
 				</div>

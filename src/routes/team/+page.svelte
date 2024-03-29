@@ -42,14 +42,14 @@
 			THREE: THREE,
 			mouseControls: true,
 			touchControls: true,
-			gyroControls: false,
+			gyroControls: vw < 479 ? true : false,
 			minHeight: vh,
 			minWidth: vw,
 			scale: 1.0,
 			scaleMobile: 1.0,
-			points: 13.0,
-			maxDistance: 20.0,
-			sapcing: 18.0,
+			points: vw < 479 ? 8.0 : 13.0,
+			maxDistance: vw < 479 ? 15.0 : 20.0,
+			spacing: vw < 479 ? 15.0 : 18.0,
 			color: 0x7accfe,
 			backgroundColor: 0x010f18
 		});
@@ -131,18 +131,18 @@
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
-							el: '.HeroBGAnim',
+							el: node,
 							THREE: THREE,
 							mouseControls: true,
 							touchControls: true,
-							gyroControls: false,
+							gyroControls: vw < 479 ? true : false,
 							minHeight: vh,
 							minWidth: vw,
 							scale: 1.0,
 							scaleMobile: 1.0,
-							points: 13.0,
-							maxDistance: 20.0,
-							sapcing: 18.0,
+							points: vw < 479 ? 8.0 : 13.0,
+							maxDistance: vw < 479 ? 15.0 : 20.0,
+							spacing: vw < 479 ? 15.0 : 18.0,
 							color: 0x7accfe,
 							backgroundColor: 0x010f18
 						});
@@ -216,7 +216,11 @@
 
 <div class="w-full h-fit themes scale-[0.55] rotate-12">
 	<section class="w-full h-dvh bg-surface border-x-2 border-t-2 flex flex-col">
-		<div class=" font-basebornSans text-2xl self-center -mb-[4.5rem] mt-10 sm:text-6xl uppercase sm:-mb-4 sm:mt-6 sm:ml-2">Tech Summit Leads</div>
+		<div
+			class=" font-basebornSans text-2xl self-center -mb-[4.5rem] mt-10 sm:text-6xl uppercase sm:-mb-4 sm:mt-6 sm:ml-2"
+		>
+			Tech Summit Leads
+		</div>
 		<div class="embla" use:emblaCarousel={{ options }}>
 			<div class="embla__container">
 				{#each newArr as person}
