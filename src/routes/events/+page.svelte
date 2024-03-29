@@ -44,6 +44,7 @@
 	}
 
 	onMount(() => {
+		window.scrollTo(0, 0);
 		vw = document.getElementById('vw')?.getBoundingClientRect().width;
 		userEvents = data.userEvents;
 		const ctx = gsap.context(() => {
@@ -211,6 +212,14 @@
 	function handleRotate(event) {
 		console.log(event);
 	}
+	let noRulebook = [
+		'Speaker Session 1',
+		'Speaker Session 2',
+		'AI Exhibition',
+		'Closing Ceremony',
+		'Speaker session',
+		'Workshop on Prompt Engineering'
+	];
 </script>
 
 <div class="landingPg h-screen w-full bg-primary sticky top-0 z-0" id="vw">
@@ -282,6 +291,13 @@
 												<span class="bottom-key-2"></span>
 											</a>
 										</button>
+									{:else if event.eventName == 'Research Poster Competition'}
+										<a class="fancy" href={event.eventImgSrc}>
+											<span class="top-key"></span>
+											<span class="text">Register Now!</span>
+											<span class="bottom-key-1"></span>
+											<span class="bottom-key-2"></span>
+										</a>
 									{:else}
 										<button on:click={handleRegisterClick(event.eventName)}>
 											<a class="fancy">
@@ -363,6 +379,13 @@
 												<span class="bottom-key-2"></span>
 											</a>
 										</button>
+									{:else if event.eventName == 'Research Poster Competition'}
+										<a class="fancy" href={event.eventImgSrc}>
+											<span class="top-key"></span>
+											<span class="text">Register Now!</span>
+											<span class="bottom-key-1"></span>
+											<span class="bottom-key-2"></span>
+										</a>
 									{:else}
 										<button on:click={handleRegisterClick(event.eventName)}>
 											<a class="fancy">
@@ -414,6 +437,13 @@
 													<span class="bottom-key-2"></span>
 												</a>
 											</button>
+										{:else if event.eventName == 'Research Poster Competition'}
+											<a class="fancy" href={event.eventImgSrc}>
+												<span class="top-key"></span>
+												<span class="text">Register Now!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
 										{:else}
 											<button on:click={handleRegisterClick(event.eventName)}>
 												<a class="fancy">
@@ -437,20 +467,19 @@
 									<div class=" font-subjectivityMedSlant text-md">
 										{event.eventDesc}
 									</div>
-									<div class=" border-2 border-white mt-4 mb-4">
-										<RulebookButton />
+									{#if !noRulebook.includes(event.eventName)}
+										<div class=" border-2 border-white mt-4 mb-4">
+											<RulebookButton />
+										</div>
+									{/if}
+									<div class=" font-basebornSans text-4xl uppercase">
+										{event.prizes.length > 0 ? 'Prize Pool :' : ''}
 									</div>
-									<div class=" font-basebornSans text-4xl uppercase">Prize Pool :</div>
 									<div class="flex flex-col justify-between items-center flex-nowrap gap-2">
-										<span class="block font-subjectivityMedSlant text-lg">
-											1<sup>st</sup>- ₹6,000</span
-										>
-										<span class="block font-subjectivityMedSlant text-lg">
-											2<sup>nd</sup>- ₹4,000</span
-										>
-										<span class="block font-subjectivityMedSlant text-lg">
-											3<sup>rd</sup>- ₹2,000</span
-										>
+										{#each event.prizes as prize}
+											<!-- content here -->
+											<span class="block font-subjectivityMedSlant text-lg"> {@html prize}</span>
+										{/each}
 									</div>
 									<div class="h-fit w-fit absolute bottom-1 right-1">
 										{#if userEvents.includes(event.eventName)}
@@ -471,13 +500,13 @@
 													<span class="bottom-key-2"></span>
 												</a>
 											</button>
-										{:else if event.eventName == "Research Poster Competition"}
-												<a class="fancy" href={event.eventImgSrc}>
-													<span class="top-key"></span>
-													<span class="text">Register Now!</span>
-													<span class="bottom-key-1"></span>
-													<span class="bottom-key-2"></span>
-												</a>
+										{:else if event.eventName == 'Research Poster Competition'}
+											<a class="fancy" href={event.eventImgSrc}>
+												<span class="top-key"></span>
+												<span class="text">Register Now!</span>
+												<span class="bottom-key-1"></span>
+												<span class="bottom-key-2"></span>
+											</a>
 										{:else}
 											<button on:click={handleRegisterClick(event.eventName)}>
 												<a class="fancy">
