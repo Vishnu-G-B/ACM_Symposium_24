@@ -36,7 +36,7 @@ export const load = async (event) => {
     const turingerDB = client.db("Turinger");
     const eventsCollection = turingerDB.collection("events");
     const usersCollection = turingerDB.collection("users");
-    let eventsArr = await eventsCollection.find({}, { projection: { _id: 0 } }).toArray();
+    let eventsArr = await eventsCollection.find({}, { projection: { _id: 0 } }).sort({ date: 1 }).toArray();
     eventsArr.forEach(element => {
         element.date = element.date.toDateString();
     });

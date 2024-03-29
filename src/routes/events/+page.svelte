@@ -208,6 +208,9 @@
 			effect.destroy();
 		}
 	});
+	function handleRotate(event) {
+		console.log(event);
+	}
 </script>
 
 <div class="landingPg h-screen w-full bg-primary sticky top-0 z-0" id="vw">
@@ -290,6 +293,7 @@
 										<button
 											title="Add New"
 											class="group cursor-pointer outline-none hover:rotate-90 duration-300"
+											onclick={handleRotate()}
 										>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
@@ -492,16 +496,16 @@
 		background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 	}
 
-	.card:hover .card-side.front {
+	/* .card:hover .card-side.front {
 		transform: rotateY(180deg);
 	}
 
 	.card:hover .card-side.back {
 		transform: rotateY(0deg);
-	}
+	} */
 
 	/* Vendor prefixes */
-	@supports (-webkit-backface-visibility: hidden) or (backface-visibility: hidden) {
+	/* @supports (-webkit-backface-visibility: hidden) or (backface-visibility: hidden) {
 		.card-side {
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
@@ -526,7 +530,7 @@
 			-webkit-transform: rotateY(0deg);
 			transform: rotateY(0deg);
 		}
-	}
+	} */
 	.embla {
 		overflow: hidden;
 	}

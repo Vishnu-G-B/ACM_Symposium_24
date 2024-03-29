@@ -84,11 +84,11 @@
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">4:3O - 6:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>Trade Sphere</h5>
+						<h5>Trade Sphere - Prelims</h5>
 						<div class="font-TWK">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
-							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
-							consectetur, illum consequuntur nemo aliquam saepe quos!
+							Experience TradeSphere Event 2024: where business acumen meets diplomatic finesse.
+							Engage in company auctions and a Corporate Summit representing companies, not
+							countries!
 						</div>
 						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
@@ -136,9 +136,10 @@
 					<div class="rows gap-0-75x">
 						<h5>Bears vs Bulls</h5>
 						<div class="font-TWK">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
-							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
-							consectetur, illum consequuntur nemo aliquam saepe quos!
+							Join the Stock Trading Challenge for an adrenaline-fueled day of trading and strategy.
+							Network with peers, refine your skills, and conquer the challenge! Don't miss the
+							D-Street Game, The Bear vs Bull Challenge, your gateway to Dalal Street's finance
+							world.
 						</div>
 						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
@@ -149,9 +150,9 @@
 					<div class="rows gap-0-75x">
 						<h5>Trade Sphere - Finals</h5>
 						<div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
+							Experience TradeSphere Event 2024: where business acumen meets diplomatic finesse.
+							Engage in company auctions and a Corporate Summit representing companies, not
+							countries!
 						</div>
 						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
@@ -207,10 +208,32 @@
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">11:3Oam - 12:3Opm</h4>
+				<div
+					class="columns schedule-column border-2 border-onPrimaryContainer rounded-md border-dashed p-2 sm:p-0 sm:border-0"
+				>
+					<h4 class="medium-heading !text-center whitespace-nowrap sm:whitespace-normal">
+						11:3Oam - 12:3Opm
+					</h4>
 					<div class="rows gap-0-75x">
-						<h5>Research poster competition</h5>
+						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Research poster competition</h5>
+						<div class="font-TWK">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
+							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
+							sequi eos est? Aliquam exercitationem fugiat voluptate.
+						</div>
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+					<div class="rows gap-0-75x">
+						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Project Expo</h5>
+						<div class="font-TWK">
+							<b>The Project Presentation Challenge.</b> <br />Participants compete to deliver the
+							most compelling and concise lightning talk about their coding projects within a
+							limited time frame.
+						</div>
+						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+					</div>
+					<div class="rows gap-0-75x">
+						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">AI exhibition</h5>
 						<div class="font-TWK">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
 							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
@@ -225,9 +248,8 @@
 					<div class="rows gap-0-75x">
 						<h5>ByteQuest - Tech and Business Quiz</h5>
 						<div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
+							<b>ByteQuest: Tech & Business Quiz</b> is an exciting competition open to all college students.
+							It encourages participants to showcase their knowledge in technology and business.
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
@@ -236,29 +258,39 @@
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">O2:00 - O4:00pm</h4>
 					<div class="rows gap-0-75x">
-						<h5>Giant Slides and Tall climbs - Life Sized Game</h5>
+						<h5>Giant Slides and Tall Climbs</h5>
 						<div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
+							Experience the life-sized Snake and Ladders: Uniting educators for
+							team-building and fun! Gather with excitement area as participants embark on this
+							adventure. Engage in friendly competition, strengthen bonds, and enjoy the
+							larger-than-life board and dice!
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">O4:3O - O8:00pm</h4>
+					<h4 class="medium-heading !text-center sm:!text-left">O4:3O - O8:00pm</h4>
 					<div class="rows gap-0-75x">
-						<h4 class="medium-heading !uppercase">Closing ceremony</h4>
+						<h4
+							class="medium-heading !uppercase !whitespace-nowrap !text-center !text-[2.2rem] sm:!text-[2.8rem]"
+						>
+							Closing ceremony
+						</h4>
 						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
 				</div>
-				<div class="horizontal-line"></div>
 
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">O4:30 - O5:00pm</h4>
+				<div class="columns schedule-column border-l-2 border-dashed sm:border-l-0">
+					<h4 class="medium-heading !text-[1.7rem] sm:!text-[2rem] !text-center">
+						O4:30 - O5:00pm
+					</h4>
 					<div class="rows gap-0-75x">
-						<h5 class="!uppercase">Prize distribution</h5>
+						<h5
+							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-left"
+						>
+							Prize distribution
+						</h5>
 						<!-- <div class="font-TWK">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
 							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
@@ -267,12 +299,17 @@
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
 				</div>
-				<div class="horizontal-line"></div>
 
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">O5:00 - O8:00pm</h4>
+				<div class="columns schedule-column border-l-2 border-dashed sm:border-l-0">
+					<h4 class="medium-heading !text-[1.7rem] sm:!text-[2rem] !text-center">
+						O5:00 - O8:00pm
+					</h4>
 					<div class="rows gap-0-75x">
-						<h5 class="!uppercase">Movie screening</h5>
+						<h5
+							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-left"
+						>
+							Movie screening
+						</h5>
 						<!-- <div class="font-TWK">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
 							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio

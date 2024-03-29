@@ -404,7 +404,7 @@
 		>
 			<div class="h-full w-full flex flex-col justify-center items-center px-4">
 				<div
-					class=" h-fit w-full text-left pt-8 pl-4 text-5xl mb-6 z-40 font-basebornSans uppercase"
+					class=" h-fit w-full text-left pt-8 sm:pl-4 text-3xl text-center sm:text-5xl  sm:mb-6 z-40 font-basebornSans uppercase"
 				>
 					Your Events??
 				</div>
