@@ -95,7 +95,7 @@
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 6:3Opm</h4>
+					<h4 class="medium-heading">3PM ONWARDS</h4>
 					<div class="rows gap-0-75x">
 						<h5>Codeverse</h5>
 						<div class="font-TWK">
