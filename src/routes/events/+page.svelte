@@ -215,7 +215,7 @@
 	let noRulebook = [
 		'Speaker Session 1',
 		'Speaker Session 2',
- 'Speaker<br/>Session on <br/>Cybersecurity',
+ 'Speaker<br/>Session on <br/>Cybersecurity',
 		'AI Exhibition',
 		'Closing Ceremony',
 		'Speaker session',
