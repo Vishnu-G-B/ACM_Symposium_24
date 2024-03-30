@@ -215,12 +215,10 @@
 					<div class="rows gap-0-75x">
 						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Research poster competition</h5>
 						<div class="font-TWK">
-							Embark on a journey into the realm of research with this exciting opportunity. To
-							participate in the competition, your first step is to submit an abstract outlining
-							your work. If your abstract is accepted, you'll have the opportunity of presenting it
-							on the prestigious stage of the tech summit. It's a chance to showcase your ideas,
-							engage with fellow enthusiasts, and contribute to the vibrant exchange of knowledge
-							and innovation.
+							Embark on a journey into the realm of research with this exciting opportunity. Submit
+							an abstract for your work - if chosen, you'll present it at the summit and gain
+							recognition on a prestigious stage! Network with fellow enthusiasts and contribute to
+							the cutting edge of innovation.
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
