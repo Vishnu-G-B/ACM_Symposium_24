@@ -45,6 +45,11 @@
 		}
 	}
 
+	function navRedirect(link) {
+		toggleNav();
+		window.location.href = link;
+	}
+
 	onMount(() => {
 		const ctx = gsap.context(() => {
 			tl = gsap.timeline();
@@ -67,22 +72,30 @@
 				<div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/" data-replace="Home"> <span>Home</span></a>
+					<button on:click={() => navRedirect('/')}>
+						<a data-replace="HOME"> <span class="!uppercase">Home</span></a></button
+					>
 				</div>
 				<div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/events" data-replace="Events"> <span>Events</span></a>
+					<button on:click={() => navRedirect('/events')}
+						><a data-replace="EVENTS"> <span class="!uppercase">Events</span></a></button
+					>
 				</div>
 				<div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/registeredEvents" data-replace="My Events"> <span>My&nbsp;Events</span></a>
+					<button on:click={() => navRedirect('/registeredEvents')}>
+						<a data-replace="MY EVENTS"> <span class="!uppercase">MY EVENTS</span></a>
+					</button>
 				</div>
 				<div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
-					<a href="/team" data-replace="Team"> <span>Team</span></a>
+					<button on:click={() => navRedirect('/team')}
+						><a data-replace="Team"> <span class="!uppercase">Team</span></a></button
+					>
 				</div>
 				<div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"

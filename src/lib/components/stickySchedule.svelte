@@ -211,15 +211,16 @@
 				<div
 					class="columns schedule-column border-2 border-onPrimaryContainer rounded-md border-dashed p-2 sm:p-0 sm:border-0"
 				>
-					<h4 class="medium-heading !text-center  sm:whitespace-normal">
-						11:3Oam - 12:3Opm
-					</h4>
+					<h4 class="medium-heading !text-center sm:whitespace-normal">11:3Oam - 12:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Research poster competition</h5>
 						<div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
+							Embark on a journey into the realm of research with this exciting opportunity. To
+							participate in the competition, your first step is to submit an abstract outlining
+							your work. If your abstract is accepted, you'll have the opportunity of presenting it
+							on the prestigious stage of the tech summit. It's a chance to showcase your ideas,
+							engage with fellow enthusiasts, and contribute to the vibrant exchange of knowledge
+							and innovation.
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
@@ -235,9 +236,11 @@
 					<div class="rows gap-0-75x">
 						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">AI exhibition</h5>
 						<div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
+							During the Project Expo competition, audiences are invited to immerse themselves in
+							the world of computer science and explore the innovative projects crafted by
+							participants in this AI Exhibition. Moreover, audiences will play a pivotal role in
+							determining the victor of the Project Expo, adding an interactive and engaging
+							dimension to the event.
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
@@ -271,9 +274,7 @@
 				<div class="columns schedule-column">
 					<h4 class="medium-heading !text-center sm:!text-left">O4:3O - O8:00pm</h4>
 					<div class="rows gap-0-75x">
-						<h4
-							class="medium-heading !uppercase  !text-center !text-[2.2rem] sm:!text-[2.8rem]"
-						>
+						<h4 class="medium-heading !uppercase !text-center !text-[2.2rem] sm:!text-[2.8rem]">
 							Closing ceremony
 						</h4>
 						<!-- <div class="small-text">by ken maskall</div> -->
