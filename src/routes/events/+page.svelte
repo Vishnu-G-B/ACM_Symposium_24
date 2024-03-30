@@ -213,9 +213,9 @@
 		console.log(event);
 	}
 	let noRulebook = [
-		'Speaker Session 1',
-		'Speaker Session 2',
- 'Speaker<br/>Session on <br/>Cybersecurity',
+		'Speaker Session on Data Science',
+		' Speaker Session on Cybersecurity',
+		'Speaker session on Entrepreneurship',
 		'AI Exhibition',
 		'Closing Ceremony',
 		'Speaker session',
