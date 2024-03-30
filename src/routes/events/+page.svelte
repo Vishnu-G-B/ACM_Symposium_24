@@ -215,6 +215,7 @@
 	let noRulebook = [
 		'Speaker Session 1',
 		'Speaker Session 2',
+ 'Speaker<br/>Session on <br/>Cybersecurity',
 		'AI Exhibition',
 		'Closing Ceremony',
 		'Speaker session',
@@ -345,7 +346,7 @@
 									class="w-full h-fit font-basebornSans text-2xl uppercase text-center self-center
 								mb-2"
 								>
-									{event.eventName}
+									{@html event.eventName}
 								</div>
 								<div class=" font-basebornSans text-2xl uppercase">About The Event :</div>
 								<div class=" font-subjectivityMedSlant text-sm">
