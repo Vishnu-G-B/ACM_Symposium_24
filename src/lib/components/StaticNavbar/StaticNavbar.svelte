@@ -90,13 +90,13 @@
 						<a data-replace="MY EVENTS"> <span class="!uppercase">MY EVENTS</span></a>
 					</button>
 				</div>
-				<div
+				<!-- <div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>
 					<button on:click={() => navRedirect('/team')}
 						><a data-replace="Team"> <span class="!uppercase">Team</span></a></button
 					>
-				</div>
+				</div> -->
 				<div
 					class="w-full h-fit text-center mb-1 text-2xl uppercase font-subjectivityMedSlant tracking-widest"
 				>

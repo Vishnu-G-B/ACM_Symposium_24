@@ -4,14 +4,18 @@
 	let email = '';
 	let mobileNo;
 	let branch = '';
-	let isMahe = '';
+	let selectedRadio = '';
 	export let form;
 </script>
 
 <div class="w-full h-dvh flex justify-center items-center">
 	<div class="flex flex-col justify-center items-center flex-1 p-[24px] w-full h-full">
 		<form method="POST">
-			<h1>Welcome Again!</h1>
+			<h1 class="!font-basebornSans !uppercase">Welcome&nbsp;Again!</h1>
+			<h6 class="font-TWK text-center">
+				Please fill this form correctly as we will use this information to contact you, when you win
+				an event!
+			</h6>
 			{#if form?.error || false}
 				<p class="error">The information you have entered is not correct</p>
 			{/if}
@@ -27,26 +31,34 @@
 					id="mobileNo"
 					name="mobileNo"
 					placeholder="Mobile Number"
-					pattern="[0-9]{10}"
 				/>
 			</label>
 			<div class="flex justify-around items-center self-center w-full h-full">
 				<div class="flex flex-col justify-center items-center">
-					<input type="radio" id="non_mahe" name="maheCheck" value="non_mahe" />
+					<input
+						type="radio"
+						id="non_mahe"
+						name="maheCheck"
+						value="non_mahe"
+						bind:group={selectedRadio}
+						on:change={() => (branch = '')}
+					/>
 					<label for="non_mahe" class="text-white whitespace-nowrap" style="border: none;"
 						>NON MAHE</label
 					>
 				</div>
 				<div class="flex flex-col justify-center items-center">
-					<input type="radio" id="mahe" name="maheCheck" value="mahe" />
+					<input type="radio" id="mahe" name="maheCheck" value="mahe" bind:group={selectedRadio} />
 					<label for="mahe" class="text-white" style="border: none;">MAHE</label>
 				</div>
 			</div>
-			<label>
-				<p class={branch ? ' above' : ' center'}>Branch</p>
-				<input bind:value={branch} type="text" id="branch" name="branch" placeholder="Branch" />
-			</label>
-			<button type="button" class="submitBtn">
+			{#if selectedRadio === 'mahe'}
+				<label>
+					<p class={branch ? ' above' : ' center'}>Branch</p>
+					<input bind:value={branch} type="text" id="branch" name="branch" placeholder="Branch" />
+				</label>
+			{/if}
+			<button type="submit" class="submitBtn">
 				{#if form?.authenticating || false}
 					<i class="fa-solid fa-spinner loadingSpinner" />
 				{:else}
