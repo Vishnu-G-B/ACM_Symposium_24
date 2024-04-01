@@ -1,9 +1,11 @@
 <script>
 	// @ts-nocheck
+	import { page } from "$app/stores";
 	let email = '';
 	let mobileNo;
 	let branch = '';
 	let selectedRadio = '';
+	let learnerMail = '';
 	export let form;
 </script>
 
@@ -51,10 +53,27 @@
 					<label for="mahe" class="text-white" style="border: none;">MAHE</label>
 				</div>
 			</div>
+
+			{#if selectedRadio === 'non_mahe'}
+			<div class="w-full h-fit text-center text-orange-600">
+				NON MAHE users will have to pay an additional registration fees of ₹200
+			</div>
+			{/if}
+
 			{#if selectedRadio === 'mahe'}
 				<label>
 					<p class={branch ? ' above' : ' center'}>Branch</p>
 					<input bind:value={branch} type="text" id="branch" name="branch" placeholder="Branch" />
+				</label>
+				<label>
+					<p class={learnerMail ? ' above' : ' center'}>Learner Email ID</p>
+					<input
+						bind:value={learnerMail}
+						type="text"
+						id="learnerMail"
+						name="learnerMail"
+						placeholder="Learner Mail ID"
+					/>
 				</label>
 			{/if}
 			<button type="submit" class="submitBtn"> Submit </button>
@@ -83,7 +102,7 @@
 	h1 {
 		text-align: center;
 		font-size: 3rem;
-		@media screen and (max-width:479px) {
+		@media screen and (max-width: 479px) {
 			font-size: 2rem;
 		}
 	}

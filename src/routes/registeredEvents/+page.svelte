@@ -5,6 +5,7 @@
 	import { gsap } from 'gsap/dist/gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount, onDestroy } from 'svelte';
+	import { page } from '$app/stores';
 	import * as THREE from 'three';
 	import NET from 'vanta/dist/vanta.net.min';
 	import RulebookButton from '$lib/components/rulebookButton.svelte';
@@ -126,7 +127,7 @@
 						let vw = document.getElementById('vw')?.getBoundingClientRect().width;
 						let vh = document.getElementById('vw')?.getBoundingClientRect().height;
 						effect = NET({
-							el: ".HeroBGAnim",
+							el: '.HeroBGAnim',
 							THREE: THREE,
 							mouseControls: true,
 							touchControls: true,
@@ -243,9 +244,9 @@
 			{#if vw < 479}
 				<div class="h-full w-full flex relative">
 					<div
-						class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[8.5rem]"
+						class="h-fit w-[10%] self-start text-3xl font-basebornSans uppercase text-white -rotate-90 sticky top-[11.5rem]"
 					>
-						Your Events!
+						Your&nbsp;Events!
 					</div>
 					<div class="h-full w-full flex flex-col justify-between items-center -ml-1 pl-1 pr-2">
 						{#each data.events as event}
@@ -448,6 +449,33 @@
 				</div>
 			</div>
 		</div>
+	{/if}
+
+	{#if data.non_mahe}
+		{#if data.paymentProcessing}
+			<div class="w-full h-screen flex flex-col justify-center items-center">
+				<div class="text-center">
+					<h2 class="text-3xl font-bold mb-4">Your payment is still processing</h2>
+					<p class="text-lg">
+						Please wait while we process your payment. You will receive your unique token once the
+						payment is successful.
+					</p>
+				</div>
+				<div class="text-center">
+					<h3 class="text-3xl font-bold mt-8 mb-4">Lost the payment link? Here it is!</h3>
+					<p class=" text-lg">
+						<a href="">Forms link here.</a>
+					</p>
+				</div>
+			</div>
+		{:else if data.token}
+			<div class="w-full h-screen flex justify-center items-center">
+				<div class="text-center">
+					<h2 class="text-3xl font-bold mb-4">Your Unique Token</h2>
+					<p class="text-4xl">{data.token}</p>
+				</div>
+			</div>
+		{/if}
 	{/if}
 {:else}
 	<div class="relative w-full h-full overflow-hidden">

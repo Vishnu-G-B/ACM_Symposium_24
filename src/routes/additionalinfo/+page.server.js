@@ -18,11 +18,14 @@ export const actions = {
             }
         } else {
             const mobileRegEx = new RegExp(/^(\+\d{1,3}[- ]?)?\d{10}$/);
+            const learnerIdRegEx = new RegExp(/^([a-zA-Z]+)(\d*)\.mitblr(202[1-9]|20[3-9]\d|2[4-9]\d{2}|[3-9]\d{3})@learner\.manipal\.edu$/);
+
             const data = await event.request.formData();
             const name = data.get("name");
             const mobileNo = data.get("mobileNo");
             const isMahe = data.get("maheCheck") === "mahe";
             const branch = isMahe ? data.get("branch") : "";
+            const learnerId = isMahe ? data.get("learnerMail") : "";
             const mahe = data.get("maheCheck");
 
             if (!mobileRegEx.test(mobileNo)) {
@@ -48,14 +51,29 @@ export const actions = {
                 }
             }
 
+            if (learnerId && !learnerIdRegEx.test(learnerId)) {
+                return {
+                    error: true,
+                    message: "Please Enter a Valid Learner Email ID",
+                }
+            }
+
             const existingUser = await usersCollection.findOne({ email: userEmail });
             if (existingUser) {
                 // User already exists, update the document
                 await usersCollection.updateOne(
                     { email: userEmail },
-                    { $set: { name, mobileNo, mahe, branch } }
+                    { $set: { name, mobileNo, mahe, branch, learnerId } }
                 );
-                throw redirect(303,"/events");
+                if (isMahe) {
+                    throw redirect(303, "/events");
+                } else {
+                    await usersCollection.updateOne(
+                        { email: userEmail },
+                        { $set: { paymentstatus: "processing" } }
+                    )
+                    throw redirect(303, "https://www.youtube.com/watch?v=OgHQ16OzLkE");
+                }
             } else {
                 console.log("i dunno wtf happened here, and i hope to never find out");
             }
