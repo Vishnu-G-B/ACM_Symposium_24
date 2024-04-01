@@ -1,6 +1,5 @@
 <script>
 	// @ts-nocheck
-
 	let email = '';
 	let mobileNo;
 	let branch = '';
@@ -12,12 +11,12 @@
 	<div class="flex flex-col justify-center items-center flex-1 p-[24px] w-full h-full">
 		<form method="POST">
 			<h1 class="!font-basebornSans !uppercase">Welcome&nbsp;Again!</h1>
-			<h6 class="font-TWK text-center">
+			<h6 class="font-TWK text-center text-[0.9rem] sm:text-[1rem]">
 				Please fill this form correctly as we will use this information to contact you, when you win
 				an event!
 			</h6>
 			{#if form?.error || false}
-				<p class="error">The information you have entered is not correct</p>
+				<p class="error">{form?.message}</p>
 			{/if}
 			<label>
 				<p class={email ? ' above' : ' center'}>Your Name</p>
@@ -58,13 +57,7 @@
 					<input bind:value={branch} type="text" id="branch" name="branch" placeholder="Branch" />
 				</label>
 			{/if}
-			<button type="submit" class="submitBtn">
-				{#if form?.authenticating || false}
-					<i class="fa-solid fa-spinner loadingSpinner" />
-				{:else}
-					Submit
-				{/if}
-			</button>
+			<button type="submit" class="submitBtn"> Submit </button>
 		</form>
 	</div>
 </div>
@@ -90,6 +83,9 @@
 	h1 {
 		text-align: center;
 		font-size: 3rem;
+		@media screen and (max-width:479px) {
+			font-size: 2rem;
+		}
 	}
 
 	form label {
@@ -159,7 +155,7 @@
 
 	.error {
 		color: coral;
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 		text-align: center;
 	}
 

@@ -200,7 +200,11 @@
 		if (data.status === 200) {
 			userEvents = [...userEvents, eventName]; // Update the userEvents array
 			showNotif(data.body.message);
-		} else {
+		} else if(data.status === 302) {
+			showNotif(data.body.message);
+			window.location.href = "/additionalinfo";
+		}
+		else {
 			showNotif(data.body.message);
 		}
 	}

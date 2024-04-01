@@ -13,6 +13,15 @@ export async function POST({ request }) {
         // Log the request payload for debugging
         console.log('Request payload:', { eventName, userEmail });
 
+        const existingUser = await usersCollection.findOne({ email: userEmail });
+        console.log(existingUser);
+        if (!existingUser.mobileNo || !existingUser.mahe || !existingUser.name) {
+            return json({
+                status: 302,
+                body: {message: "redirecting"},
+            })
+        }
+
         const existingRegistration = await UserEventsCollection.findOne({ event: eventName, user: userEmail });
         if (existingRegistration) {
             return json({
@@ -26,8 +35,8 @@ export async function POST({ request }) {
 
         const updateResult = await usersCollection.updateOne(
             { email: userEmail },
-            { $addToSet: { registeredEvents: eventName } }, 
-            { upsert: true } 
+            { $addToSet: { registeredEvents: eventName } },
+            { upsert: true }
         );
         console.log('Update result:', updateResult);
 
