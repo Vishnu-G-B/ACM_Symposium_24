@@ -462,10 +462,7 @@
 					</p>
 				</div>
 				<div class="text-center">
-					<h3 class="text-3xl font-bold mt-8 mb-4">Lost the payment link? Here it is!</h3>
-					<p class=" text-lg">
-						<a href="">Forms link here.</a>
-					</p>
+					<h3 class="text-3xl font-bold mt-8 mb-4">Lost the payment link? <a href="https://forms.gle/q6yKKKqmM7VFvqBS7">Here it is!</a></h3>
 				</div>
 			</div>
 		{:else if data.token}
