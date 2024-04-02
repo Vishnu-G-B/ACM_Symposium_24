@@ -72,7 +72,7 @@ export const actions = {
                         { email: userEmail },
                         { $set: { paymentstatus: "processing" } }
                     )
-                    throw redirect(303, "https://www.youtube.com/watch?v=OgHQ16OzLkE");
+                    throw redirect(303, "https://forms.gle/q6yKKKqmM7VFvqBS7");
                 }
             } else {
                 console.log("i dunno wtf happened here, and i hope to never find out");
