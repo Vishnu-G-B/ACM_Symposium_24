@@ -10,6 +10,7 @@
 	import NET from 'vanta/dist/vanta.net.min';
 	import RulebookButton from '$lib/components/rulebookButton.svelte';
 	import Empty from '$lib/components/empty.svelte';
+	import LightButton from '$lib/components/lightButton.svelte';
 
 	let emblaAPI;
 	let vw;
@@ -461,8 +462,11 @@
 						payment is successful.
 					</p>
 				</div>
-				<div class="text-center">
-					<h3 class="text-3xl font-bold mt-8 mb-4">Lost the payment link? <span> <a href="https://forms.gle/q6yKKKqmM7VFvqBS7">Here it is!</a ></ span> </h3>
+				<div class=" w-full h-fit text-center flex-col justify-center items-center">
+					<h3 class="text-3xl font-bold mt-8 mb-4">Not Paid yet?</h3>
+					<div class="w-full h-fit flex justify-center items-center">
+						<LightButton link="https://forms.gle/q6yKKKqmM7VFvqBS7" buttonText="Pay Now!" />
+					</div>
 				</div>
 			</div>
 		{:else if data.token}
