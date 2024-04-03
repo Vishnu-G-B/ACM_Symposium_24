@@ -29,9 +29,9 @@
 				</div>
 			</div>
 			<div class="vertical-line"></div>
-			<!--<div class="rows gap-1x">
+			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
+				<!--<div class="columns schedule-column">
 					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5 class=" uppercase">Speaker session</h5>
