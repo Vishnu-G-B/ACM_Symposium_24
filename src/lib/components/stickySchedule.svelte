@@ -43,7 +43,7 @@
 						<div class="small-text">by Ashish Burade</div>
 					</div>
 				</div> -->
-				<div class="horizontal-line"></div>
+				<!--<div class="horizontal-line"></div>-->
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">5:3O - 6:3Opm</h4>
 					<div class="rows gap-0-75x">
@@ -94,7 +94,7 @@
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
+				<!--<div class="columns schedule-column">
 					<h4 class="medium-heading">3PM ONWARDS</h4>
 					<div class="rows gap-0-75x">
 						<h5>Codeverse</h5>
@@ -103,12 +103,12 @@
 							of three with one computer each. The team solving the most questions claims victory,
 							with runners-up awarded 2nd and 3rd place. Limited to 15 teams.
 						</div>
-						<!-- <div class="small-text">by Laura Davis</div> -->
+						<div class="small-text">by Laura Davis</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<div class="horizontal-line"></div>
 	<div class="container---main">
 		<div class="section-inner has-title">
