@@ -94,14 +94,16 @@
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-                                    <div class="columns schedule-column">
-                                        <h4 class="medium-heading">4:0O - 7:0Opm</h4>
-                                        <div class="rows gap-0-75x">
-                                                <h5>E-Gaming</h5>
-                                                <div class="font-TWK">Join us for some E-gaming extravaganza! With Clash Royale, Valorant and more</div>
-                                                <!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
-                                        </div>
-                                </div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">4:0O - 7:0Opm</h4>
+					<div class="rows gap-0-75x">
+						<h5>E-Gaming</h5>
+						<div class="font-TWK">
+							Join us for some E-gaming extravaganza! With Clash Royale, Valorant and more
+						</div>
+						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
+					</div>
+				</div>
 				<!--<div class="columns schedule-column">
 					<h4 class="medium-heading">3PM ONWARDS</h4>
 					<div class="rows gap-0-75x">
@@ -191,6 +193,19 @@
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
+					<h4 class="medium-heading">O9:45 - 1O:00am</h4>
+					<div class="rows gap-0-75x">
+						<h5 class="!uppercase">Tech Summit Inauguration</h5>
+						<!-- <div class="font-TWK">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
+							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
+							consectetur, illum consequuntur nemo aliquam saepe quos!
+						</div> -->
+						<!-- <div class="small-text">by Dr. Prashant Mishra</div> -->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
 					<h4 class="medium-heading">10:00 - 10:4Oam</h4>
 					<div class="rows gap-0-75x">
 						<h5 class="!uppercase">Speaker session</h5>
@@ -206,7 +221,7 @@
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">10:5O - 11:3Oam</h4>
 					<div class="rows gap-0-75x">
-						<h5 class="!uppercase">Speaker session</h5>
+						<h5 class="!uppercase">Speaker&nbsp;session</h5>
 						<!-- <div class="font-TWK">
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
 							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
@@ -216,10 +231,8 @@
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-				<div
-					class="columns schedule-column border-2 border-onPrimaryContainer rounded-md border-dashed p-2 sm:p-0 sm:border-0"
-				>
-					<h4 class="medium-heading !text-center sm:whitespace-normal">11:3Oam - 12:3Opm</h4>
+				<div class="columns schedule-column p-2 sm:p-0 sm:border-0">
+					<h4 class="medium-heading sm:whitespace-normal">11:3Oam - 12:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Research poster competition</h5>
 						<div class="font-TWK">
@@ -230,30 +243,10 @@
 						</div>
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
-					<div class="rows gap-0-75x">
-						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Project Expo</h5>
-						<div class="font-TWK">
-							<b>The Project Presentation Challenge.</b> <br />Participants compete to deliver the
-							most compelling and concise lightning talk about their coding projects within a
-							limited time frame.
-						</div>
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
-					</div>
-					<div class="rows gap-0-75x">
-						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">AI exhibition</h5>
-						<div class="font-TWK">
-							During the Project Expo competition, audiences are invited to immerse themselves in
-							the world of computer science and explore the innovative projects crafted by
-							participants in this AI Exhibition. Moreover, audiences will play a pivotal role in
-							determining the victor of the Project Expo, adding an interactive and engaging
-							dimension to the event.
-						</div>
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
-					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">O2:00 - O4:00pm</h4>
+					<h4 class="medium-heading">O1:3O - O3:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>ByteQuest - Tech and Business Quiz</h5>
 						<div class="font-TWK">
@@ -263,7 +256,7 @@
 						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
 					</div>
 				</div>
-				<div class="horizontal-line"></div>
+				<!-- <div class="horizontal-line"></div>
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">O2:00 - O4:00pm</h4>
 					<div class="rows gap-0-75x">
@@ -273,12 +266,25 @@
 							fun! Gather with excitement area as participants embark on this adventure. Engage in
 							friendly competition, strengthen bonds, and enjoy the larger-than-life board and dice!
 						</div>
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
+						<div class="small-text">by Dr. Arulalan Rajan</div> 
+					</div>
+				</div> -->
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">O1:3OPM ONWARDS</h4>
+					<div class="rows gap-0-75x">
+						<h5>Codeverse</h5>
+						<div class="font-TWK">
+							Embark on the Coding Challenge 2024: Tackle 10 coding problems in 3 hours. Form teams
+							of three with one computer each. The team solving the most questions claims victory,
+							with runners-up awarded 2nd and 3rd place. Limited to 15 teams.
+						</div>
+						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading !text-center sm:!text-left">O4:3O - O8:00pm</h4>
+					<h4 class="medium-heading !text-center sm:!text-left">O4:00 - O8:45pm</h4>
 					<div class="rows gap-0-75x">
 						<h4 class="medium-heading !uppercase !text-center !text-[2.2rem] sm:!text-[2.8rem]">
 							Closing ceremony
@@ -289,11 +295,11 @@
 
 				<div class="columns schedule-column border-l-2 border-dashed sm:border-l-0">
 					<h4 class="medium-heading !text-[1.7rem] sm:!text-[2rem] !text-center">
-						O4:30 - O5:00pm
+						O4:00 - O4:3Opm
 					</h4>
 					<div class="rows gap-0-75x">
 						<h5
-							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-left"
+							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-center"
 						>
 							Prize distribution
 						</h5>
@@ -308,11 +314,11 @@
 
 				<div class="columns schedule-column border-l-2 border-dashed sm:border-l-0">
 					<h4 class="medium-heading !text-[1.7rem] sm:!text-[2rem] !text-center">
-						O5:00 - O8:00pm
+						O4:3O - O8:45pm
 					</h4>
 					<div class="rows gap-0-75x">
 						<h5
-							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-left"
+							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-center"
 						>
 							Movie screening
 						</h5>
