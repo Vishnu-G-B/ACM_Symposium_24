@@ -105,10 +105,10 @@
 						</div>
 						<div class="small-text">by Laura Davis</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
-	</div>-->
+	</div>
 	<div class="horizontal-line"></div>
 	<div class="container---main">
 		<div class="section-inner has-title">
