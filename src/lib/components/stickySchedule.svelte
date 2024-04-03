@@ -94,7 +94,7 @@
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
-                                    <!--<div class="columns schedule-column">
+                                    <div class="columns schedule-column">
                                         <h4 class="medium-heading">4:0O - 7:0Opm</h4>
                                         <div class="rows gap-0-75x">
                                                 <h5>E-Gaming</h5>
