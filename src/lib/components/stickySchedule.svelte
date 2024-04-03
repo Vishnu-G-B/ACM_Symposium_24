@@ -45,7 +45,7 @@
 				</div> -->
 				<!--<div class="horizontal-line"></div>-->
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">5:3O - 6:3Opm</h4>
+					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Workshop on Prompt Engineering</h5>
 						<!-- <div class="font-TWK">
@@ -82,7 +82,7 @@
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 6:3Opm</h4>
+					<h4 class="medium-heading">4:3O - 6:0Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Trade Sphere - Prelims</h5>
 						<div class="font-TWK">
@@ -156,7 +156,7 @@
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">5:3O - 6:3Opm</h4>
+					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Trade Sphere - Finals</h5>
 						<div class="font-TWK">
