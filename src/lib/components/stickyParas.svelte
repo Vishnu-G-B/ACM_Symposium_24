@@ -14,7 +14,7 @@
 					Empowering Engagement
 				</h4>
 				<div class="text-white font-TWK -mt-8 sm:-mt-5">
-					<b>No registration fee</b> is required for any event at the tech summit, emphasizing our commitment
+					<b>No registration fee (for MAHE students)</b> is required for any event at the tech summit, emphasizing our commitment
 					to fostering inclusive and accessible engagement for all attendees, ensuring that everyone
 					can participate wholeheartedly.
 				</div>

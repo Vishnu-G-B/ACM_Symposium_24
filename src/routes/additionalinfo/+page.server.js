@@ -18,7 +18,7 @@ export const actions = {
             }
         } else {
             const mobileRegEx = new RegExp(/^(\+\d{1,3}[- ]?)?\d{10}$/);
-            const learnerIdRegEx = new RegExp(/^([a-zA-Z]+)(\d*)\.mitblr(202[1-9]|20[3-9]\d|2[4-9]\d{2}|[3-9]\d{3})@learner\.manipal\.edu$/);
+            const learnerIdRegEx = new RegExp(/^[a-zA-Z0-9]+@learner\.manipal\.edu$/);
 
             const data = await event.request.formData();
             const name = data.get("name");
