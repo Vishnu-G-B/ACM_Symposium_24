@@ -18,7 +18,7 @@ export const actions = {
             }
         } else {
             const mobileRegEx = new RegExp(/^(\+\d{1,3}[- ]?)?\d{10}$/);
-            const learnerIdRegEx = new RegExp(/^[a-zA-Z]+[a-zA-Z0-9]*\.[a-zA-Z]+@learner\.manipal\.edu$/);
+            // const learnerIdRegEx = new RegExp(/^[a-zA-Z]+[a-zA-Z0-9]*\.[a-zA-Z]+@learner\.manipal\.edu$/);
 
             const data = await event.request.formData();
             const name = data.get("name");
@@ -51,12 +51,12 @@ export const actions = {
                 }
             }
 
-            if (learnerId && !learnerIdRegEx.test(learnerId)) {
-                return {
-                    error: true,
-                    message: "Please Enter a Valid Learner Email ID",
-                }
-            }
+            // if (learnerId && !learnerIdRegEx.test(learnerId)) {
+            //     return {
+            //         error: true,
+            //         message: "Please Enter a Valid Learner Email ID",
+            //     }
+            // }
 
             const existingUser = await usersCollection.findOne({ email: userEmail });
             if (existingUser) {
