@@ -366,7 +366,7 @@
 										<div class=" font-subjectivityMedSlant text-md">
 											{event.eventDesc}
 										</div>
-										<div class=" border-2 border-white mt-4 mb-4">
+										<!-- <div class=" border-2 border-white mt-4 mb-4">
 											<RulebookButton />
 										</div>
 										<div class=" font-basebornSans text-4xl uppercase">Prize Pool :</div>
@@ -380,7 +380,7 @@
 											<span class="block font-subjectivityMedSlant text-lg">
 												3<sup>rd</sup>- ₹2,000</span
 											>
-										</div>
+										</div> -->
 										<div class="h-fit w-fit absolute bottom-1 right-1">
 											<button disabled>
 												<a class="fancy !cursor-default" disabled>
