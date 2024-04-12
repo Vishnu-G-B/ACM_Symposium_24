@@ -51,6 +51,13 @@ export const actions = {
                 }
             }
 
+            if (mahe == null) {
+                return {
+                    error: true,
+                    message: "Please Select MAHE or NON MAHE",
+                }
+            }
+
             // if (learnerId && !learnerIdRegEx.test(learnerId)) {
             //     return {
             //         error: true,

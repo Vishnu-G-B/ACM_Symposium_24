@@ -356,11 +356,11 @@
 								<div class=" font-subjectivityMedSlant text-sm">
 									{event.eventDesc}
 								</div>
-								{#if !noRulebook.includes(event.eventName)}
+								<!-- {#if !noRulebook.includes(event.eventName)}
 									<div class=" border-2 border-white mt-2 mb-2">
 										<RulebookButton link={event.rulebookLink} />
 									</div>
-								{/if}
+								{/if} -->
 								<div class=" font-basebornSans text-3xl uppercase">
 									{event.prizes.length > 0 ? 'Prize Pool :' : ''}
 								</div>
@@ -477,11 +477,11 @@
 									<div class=" font-subjectivityMedSlant text-md">
 										{event.eventDesc}
 									</div>
-									{#if !noRulebook.includes(event.eventName)}
+									<!-- {#if !noRulebook.includes(event.eventName)}
 										<div class=" border-2 border-white mt-4 mb-4">
 											<RulebookButton link={event.rulebookLink} />
 										</div>
-									{/if}
+									{/if} -->
 									<div class=" font-basebornSans text-4xl uppercase">
 										{event.prizes.length > 0 ? 'Prize Pool :' : ''}
 									</div>
