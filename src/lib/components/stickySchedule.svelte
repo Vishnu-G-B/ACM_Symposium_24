@@ -1,3 +1,8 @@
+<script>
+	import connectLogo from '$lib/Team/ConnectEdLogo.png';
+	import NSSLogo from '$lib/Team/new-nss-seeklogo.svg';
+</script>
+
 <div class="content-wrapper">
 	<div class="horizontal-line"></div>
 	<div class="container---main">
@@ -347,20 +352,34 @@
 				</div>
 			</div>
 			<div class="vertical-line"></div>
-			<div class="container---xs">
-				<div class="rows">
-					<div class="large-text !font-basebornSans !uppercase">Explore Turinger '24</div>
-					<div class="columns cta-action">
-						<div class="small-text !font-TWK !text-lg">
-							April 8<sup>th</sup>–13<sup>th</sup>,<br />@MITBLR
+			<div class="w-full lg:max-w-[452px] h-full flex flex-col justify-center items-center">
+				<div class=" w-full h-full flex justify-start items-start lg:mb-[1rem]">
+					<div class="h-fit w-full lg:max-w-[452px] flex flex-col justify-center items-center">
+						<div class=" w-full text-onPrimaryContainer text-left lg:text-center font-basebornSans 
+						text-3xl Smobile:text-3xl Mmobile:text-3xl lg:text-4xl uppercase">
+							Our Sponsors
 						</div>
-						<div class="vertical-line"></div>
-						<a class="fancy" href="/events">
-							<span class="top-key"></span>
-							<span class="text">Register Now!!</span>
-							<span class="bottom-key-1"></span>
-							<span class="bottom-key-2"></span>
-						</a>
+						<div class="w-full h-full flex lg:flex-col justify-evenly lg:justify-center items-center">
+							<img src={connectLogo} alt="sponsor 1" class="w-[50vw] Mmobile:w-[50vw] lg:w-[30vw] h-auto object-contain" />
+							<img src={NSSLogo} alt="sponsor 2" class="w-[30vw] Mmobile:w-[30vw] lg:w-[14vw] h-auto object-contain" />
+						</div>
+					</div>
+				</div>
+				<div class="container---xs">
+					<div class="rows">
+						<div class="large-text !font-basebornSans !uppercase">Explore Turinger '24</div>
+						<div class="columns cta-action">
+							<div class="small-text !font-TWK !text-lg">
+								April 8<sup>th</sup>–13<sup>th</sup>,<br />@MITBLR
+							</div>
+							<div class="vertical-line"></div>
+							<a class="fancy" href="/events">
+								<span class="top-key"></span>
+								<span class="text">Register Now!!</span>
+								<span class="bottom-key-1"></span>
+								<span class="bottom-key-2"></span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -529,7 +548,7 @@
 		grid-column-gap: 24px;
 		grid-row-gap: 24px;
 		flex-direction: column;
-		padding-bottom: 72px;
+		padding-bottom: 36px;
 		padding-left: 24px;
 		padding-right: 24px;
 		display: flex;
