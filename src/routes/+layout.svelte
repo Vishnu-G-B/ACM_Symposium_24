@@ -5,11 +5,15 @@
 	import acmLogo from '$lib/Team/acm_logo_pureWhite.svg';
 	import connectLogo from '$lib/Team/ConnectEdLogo.png';
 	import NSSLogo from '$lib/Team/new-nss-seeklogo.svg';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
+	inject({ mode: dev ? 'development' : 'production' });
 	// console.log($page.data.session);
 </script>
 
-<StaticNavbar />
-<Notif />
+<!-- <StaticNavbar /> -->
+<!-- <Notif /> -->
 <slot />
 
 <!-- <footer class="h-full w-full">

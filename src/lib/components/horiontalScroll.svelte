@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	import tempImg from '$lib/images/tempImg.jpg';
+	// import tempImg from '$lib/images/tempImg.jpg';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap/dist/gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -25,28 +25,28 @@
 			element.addEventListener('mouseleave', onMouseHoverOut);
 		});
 
-        // const ctx2 = gsap.context(()=> {
-        //     const onLoadTimeline = gsap.timeline();
-        //     onLoadTimeline.to(".reveal-1",{
-        //         height: "100vh",
-        //         ease: "power4.inOut",
-        //         duration:1
-        //     });
-        //     onLoadTimeline.to(".reveal-2",{
-        //         height:"100vh",
-        //         delay:0.1,
-        //         ease:"power4.inOut",
-        //         duration:1
-        //     },"<");
-        //     onLoadTimeline.to(".reveal-3",{
-        //         height: "100vh",
-        //         delay:0.1,
-        //         ease:"power4.inOut",
-        //         duration:1,
-        //         zIndex: 10
-        //     },"<");
+		// const ctx2 = gsap.context(()=> {
+		//     const onLoadTimeline = gsap.timeline();
+		//     onLoadTimeline.to(".reveal-1",{
+		//         height: "100vh",
+		//         ease: "power4.inOut",
+		//         duration:1
+		//     });
+		//     onLoadTimeline.to(".reveal-2",{
+		//         height:"100vh",
+		//         delay:0.1,
+		//         ease:"power4.inOut",
+		//         duration:1
+		//     },"<");
+		//     onLoadTimeline.to(".reveal-3",{
+		//         height: "100vh",
+		//         delay:0.1,
+		//         ease:"power4.inOut",
+		//         duration:1,
+		//         zIndex: 10
+		//     },"<");
 
-        // })
+		// })
 
 		function onMouseMove(e) {
 			const container = document.querySelector('.container');
@@ -76,13 +76,23 @@
 		function onMouseHover() {
 			gsap.to(bigBall, {
 				duration: 0.3,
-				scale: 4,
+				scale: 2,
+				ease: 'power2.out'
+			});
+			gsap.to(smallBall, {
+				duration: 0.3,
+				scale: 2,
 				ease: 'power2.out'
 			});
 		}
 
 		function onMouseHoverOut() {
 			gsap.to(bigBall, {
+				duration: 0.3,
+				scale: 1,
+				ease: 'power2.out'
+			});
+			gsap.to(smallBall, {
 				duration: 0.3,
 				scale: 1,
 				ease: 'power2.out'
@@ -119,9 +129,9 @@
 			</svg>
 		</div>
 	</div>
-    <div class="h-0 w-full bg-primaryContainer reveal-1 absolute z-[5] bottom-0"></div>
-    <!-- <div class="h-0 w-full bg-onPrimaryContainer reveal-2 absolute bottom-0"></div> -->
-	<div class="h-full w-auto bg-surface container overscroll-none hoverable">
+	<div class="h-0 w-full bg-primaryContainer reveal-1 absolute z-[5] bottom-0"></div>
+	<!-- <div class="h-0 w-full bg-onPrimaryContainer reveal-2 absolute bottom-0"></div> -->
+	<div class="h-full w-auto bg-surface container overscroll-none">
 		<div
 			class=" h-[97vh] w-full pt-14 pb-4 ml-4 flex flex-nowrap items-center
             border-b-[1px] border-slate-500"
@@ -130,7 +140,7 @@
 				class="event1 w-[76vh] h-full border-r-[1px] border-slate-300 mr-[1vw] pr-[1vw] flex-none"
 			>
 				<div class="h-full w-full flex flex-col justify-center items-start">
-					<img src={tempImg} alt="TEMP IMG" class="w-full h-full object-cover" />
+					<img src="" alt="TEMP IMG" class="w-full h-full object-cover hoverable" />
 					<div class=" text-3xl text-onSurface font-basebornSans mb-0 pb-0">
 						STOCK SIMULATOR<br />
 					</div>
@@ -141,7 +151,7 @@
 				class="event1 w-[76vh] h-full border-r-[1px] border-slate-300 mr-[1vw] pr-[1vw] flex-none"
 			>
 				<div class="h-full w-full flex flex-col justify-center items-start">
-					<img src={tempImg} alt="TEMP IMG" class="w-full h-full object-cover" />
+					<img src="" alt="TEMP IMG" class="w-full h-full object-cover hoverable" />
 					<div class=" text-3xl text-onSurface font-basebornSans mb-0 pb-0">
 						STOCK SIMULATOR<br />
 					</div>
@@ -152,7 +162,7 @@
 				class="event1 w-[76vh] h-full border-r-[1px] border-slate-300 mr-[1vw] pr-[1vw] flex-none"
 			>
 				<div class="h-full w-full flex flex-col justify-center items-start">
-					<img src={tempImg} alt="TEMP IMG" class="w-full h-full object-cover" />
+					<img src="" alt="TEMP IMG" class="w-full h-full object-cover hoverable" />
 					<div class=" text-3xl text-onSurface font-basebornSans mb-0 pb-0">
 						STOCK SIMULATOR<br />
 					</div>
@@ -163,7 +173,7 @@
 				class="event1 w-[76vh] h-full border-r-[1px] border-slate-300 mr-[1vw] pr-[1vw] flex-none"
 			>
 				<div class="h-full w-full flex flex-col justify-center items-start">
-					<img src={tempImg} alt="TEMP IMG" class="w-full h-full object-cover" />
+					<img src="" alt="TEMP IMG" class="w-full h-full object-cover hoverable" />
 					<div class=" text-3xl text-onSurface font-basebornSans mb-0 pb-0">
 						STOCK SIMULATOR<br />
 					</div>
@@ -172,7 +182,7 @@
 			</div>
 			<div class="event1 w-[76vh] h-full pr-[1vw] flex-none">
 				<div class="h-full w-full flex flex-col justify-center items-start">
-					<img src={tempImg} alt="TEMP IMG" class="w-full h-full object-cover" />
+					<img src="" alt="TEMP IMG" class="w-full h-full object-cover hoverable" />
 					<div class=" text-3xl text-onSurface font-basebornSans mb-0 pb-0">
 						STOCK SIMULATOR<br />
 					</div>
@@ -181,7 +191,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="h-screen w-full overflow-hidden">TESTING</div>
+	<!-- <div class="h-screen w-full overflow-hidden">TESTING</div> -->
 </body>
 
 <style>
