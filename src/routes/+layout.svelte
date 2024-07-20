@@ -18,7 +18,9 @@
 	// console.log($page.data.session);
 </script>
 
-<!-- <StaticNavbar /> -->
+
+
+ <StaticNavbar />
 <!-- <Notif /> -->
 <slot />
 
