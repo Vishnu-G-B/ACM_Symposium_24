@@ -2,7 +2,7 @@
 	<div
 		class="w-fit flex flex-auto font-basebornSans text-primary text-[4rem] sm:text-[6rem] lg:text-[5rem] xl:text-[6rem] tracking-wider pl-4"
 	>
-		Turinger '24
+		Turinger '25
 	</div>
 	<div class="pl-4 pr-4 pb-10 -mt-4">
 		<div class="columns gap-1x text">
