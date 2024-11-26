@@ -9,7 +9,7 @@
 		<div class="section-inner grid-title">
 			<h4 class="large-heading font-basebornSans">schedule</h4>
 			<div class="vertical-line"></div>
-			<h4 class="!text-3xl sm:!text-6xl">April 8<sup>th</sup> - 13<sup>th</sup></h4>
+			<h4 class="!text-3xl sm:!text-6xl">January 17<sup>th</sup> - 19<sup>th</sup></h4>
 		</div>
 	</div>
 	<div class="horizontal-line"></div>
@@ -29,7 +29,7 @@
 				<div class="title-text">
 					<h4 class="large-heading">day O1</h4>
 					<h4 class=" text-onPrimaryContainer !font-basebornSans">
-						8<sup>th</sup>April, 2O24
+						17<sup>th</sup>January, 2O25
 					</h4>
 				</div>
 			</div>
@@ -80,7 +80,7 @@
 				</div>
 				<div class="title-text">
 					<h4 class="large-heading">day O2</h4>
-					<h4 class="text-onPrimaryContainer !font-basebornSans">1O<sup>th</sup>April, 2O24</h4>
+					<h4 class="text-onPrimaryContainer !font-basebornSans">18<sup>th</sup>Jan, 2O25</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
@@ -140,7 +140,7 @@
 				</div>
 				<div class="title-text">
 					<h4 class="large-heading">day O3</h4>
-					<h4 class="text-onPrimaryContainer !font-basebornSans">12<sup>th</sup>April, 2O24</h4>
+					<h4 class="text-onPrimaryContainer !font-basebornSans">19<sup>th</sup>Jan, 2O25</h4>
 				</div>
 			</div>
 			<div class="vertical-line"></div>
@@ -367,10 +367,10 @@
 				</div>
 				<div class="container---xs">
 					<div class="rows">
-						<div class="large-text !font-basebornSans !uppercase">Explore Turinger '24</div>
+						<div class="large-text !font-basebornSans !uppercase">Explore Turinger '25</div>
 						<div class="columns cta-action">
 							<div class="small-text !font-TWK !text-lg">
-								April 8<sup>th</sup>–13<sup>th</sup>,<br />@MITBLR
+								January 17<sup>th</sup>–19<sup>th</sup>,<br />@MITBLR
 							</div>
 							<div class="vertical-line"></div>
 							<a class="fancy" href="/events">
