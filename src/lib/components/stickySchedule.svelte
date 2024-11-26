@@ -53,9 +53,9 @@
 					<h4 class="medium-heading">10:0Oam - 1:0Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>App Development workshop</h5>
-						<!-- <div class="font-TWK">
+						<div class="font-TWK">
 							A hands-on app development workshop focused on cross-platform app development using Flutter conducted by ACM SIGSOFT
-						</div> -->
+						</div>
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
 				</div>
@@ -132,18 +132,19 @@
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
 				</div>
-				<!--<div class="columns schedule-column">
-					<h4 class="medium-heading">3PM ONWARDS</h4>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">10:0Opm - 12:0Oam</h4>
 					<div class="rows gap-0-75x">
-						<h5>Codeverse</h5>
+						<h5>ACM Eminent Speaker Talk </h5>
 						<div class="font-TWK">
-							Embark on the Coding Challenge 2024 : Tackle 10 coding problems in 3 hours. Form teams
-							of three with one computer each. The team solving the most questions claims victory,
-							with runners-up awarded 2nd and 3rd place. Limited to 15 teams.
+							An Eminent Speaker Talk hosted by the ACM Women student chapter. This
+							event aims to provide a platform for students to learn from industry experts
+							and gain insights into cutting-edge technologies.
 						</div>
-						<div class="small-text">by Laura Davis</div>
+						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
-				</div>-->
+				</div>
 			</div>
 		</div>
 	</div>
