@@ -134,13 +134,26 @@
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:0Opm - 12:0Oam</h4>
+					<h4 class="medium-heading">01:0Opm - 02:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>ACM Eminent Speaker Talk </h5>
+						<h5>Squid Game </h5>
 						<div class="font-TWK">
-							An Eminent Speaker Talk hosted by the ACM Women student chapter. This
-							event aims to provide a platform for students to learn from industry experts
-							and gain insights into cutting-edge technologies.
+							The Squid Game Challenge is an immersive event inspired by the Squid
+							Series, combining strategic and physical challenges.
+						</div>
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">04:0Opm - 04:3Opm</h4>
+					<h4 class="medium-heading">04:45pm - 05:3Opm</h4>
+
+					<div class="rows gap-0-75x">
+						<h5>Debug Marathon </h5>
+						<div class="font-TWK">
+							The Debug Marathon focuses on software development and problem-solving
+skills. In this event, participants will be given a set of buggy code sections
+that they must debug and execute in the shortest possible time to win conducted by ACM SIGSOFT.
 						</div>
 					</div>
 				</div>
