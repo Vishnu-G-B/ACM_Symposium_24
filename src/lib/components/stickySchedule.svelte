@@ -50,17 +50,42 @@
 				</div> -->
 				<!--<div class="horizontal-line"></div>-->
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
+					<h4 class="medium-heading">10:00am - 1:00pm</h4>
 					<div class="rows gap-0-75x">
-						<h5>Workshop on Prompt Engineering</h5>
+						<h5>App Development workshop</h5>
 						<!-- <div class="font-TWK">
-							Explore the exciting potential of AI in education, and how it can be used to
-							personalize learning, improve educational outcomes, and create new opportunities for
-							students and educators alike.
+							A hands-on app development workshop focused on cross-platform app development using Flutter conducted by ACM SIGSOFT.
 						</div> -->
 						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
 				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">2:0Opm - 3:3Opm</h4>
+					<div class="rows gap-0-75x">
+						<h5>Just a Minute</h5>
+						<div class="font-TWK">
+							This event will challenge participants to think on their feet and deliver concise, engaging presentations on a variety of topics conducted by APEX.
+						</div>
+						<!--<div class="small-text">by Laura Davis</div>-->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<!--<div class="columns schedule-column">
+					<h4 class="medium-heading">3:3Opm - 5:0Opm</h4>
+					<div class="rows gap-0-75x">
+						<h5 class=" uppercase">Panel discussions conducted by ACM SIGAI</h5>
+						<div class=" font-TWK">
+							We propose a panel discussion on the topic "Bias in AI: Can We Build Truly
+Unbiased Systems?" This event will bring together experts from academia
+and industry to discuss the challenges and opportunities in developing fair
+and unbiased AI systems.
+						</div>
+						<div class="small-text">by Ashish Burade</div>
+					</div>
+				</div> -->
+				<!--<div class="horizontal-line"></div>-->
+				<div class="columns schedule-column">
 			</div>
 		</div>
 	</div>
@@ -189,152 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="title-text">
-					<h4 class="large-heading">day O4</h4>
-					<h4 class="text-onPrimaryContainer !font-basebornSans">13<sup>th</sup>April, 2O24</h4>
-				</div>
-			</div>
-			<div class="vertical-line"></div>
-			<div class="rows gap-1x">
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">O9:45 - 1O:00am</h4>
-					<div class="rows gap-0-75x">
-						<h5 class="!uppercase">Tech Summit Inauguration</h5>
-						<!-- <div class="font-TWK">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
-							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
-							consectetur, illum consequuntur nemo aliquam saepe quos!
-						</div> -->
-						<!-- <div class="small-text">by Dr. Prashant Mishra</div> -->
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:00 - 10:4Oam</h4>
-					<div class="rows gap-0-75x">
-						<h5 class="!uppercase">Speaker session</h5>
-						<!-- <div class="font-TWK">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore distinctio unde
-							earum, odit eaque doloribus voluptatibus possimus quibusdam ab vero alias, fugit
-							consectetur, illum consequuntur nemo aliquam saepe quos!
-						</div> -->
-						<div class="small-text">by Dr. Prashant Mishra</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:5O - 11:3Oam</h4>
-					<div class="rows gap-0-75x">
-						<h5 class="!uppercase">Speaker&nbsp;session</h5>
-						<!-- <div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
-						</div> -->
-						<div class="small-text">by Dr. Arulalan Rajan</div>
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column p-2 sm:p-0 sm:border-0">
-					<h4 class="medium-heading sm:whitespace-normal">11:3Oam - 12:3Opm</h4>
-					<div class="rows gap-0-75x">
-						<h5 class=" !text-[1.5rem] -mb-5 sm:-mb-0">Research poster competition</h5>
-						<div class="font-TWK">
-							Embark on a journey into the realm of research with this exciting opportunity. Submit
-							an abstract for your work - if chosen, you'll present it at the summit and gain
-							recognition on a prestigious stage! Network with fellow enthusiasts and contribute to
-							the cutting edge of innovation.
-						</div>
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">O1:3O - O3:3Opm</h4>
-					<div class="rows gap-0-75x">
-						<h5>ByteQuest - Tech and Business Quiz</h5>
-						<div class="font-TWK">
-							<b>ByteQuest: Tech & Business Quiz</b> is an exciting competition open to all college students.
-							It encourages participants to showcase their knowledge in technology and business.
-						</div>
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
-					</div>
-				</div>
-				<!-- <div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">O2:00 - O4:00pm</h4>
-					<div class="rows gap-0-75x">
-						<h5>Giant Slides and Tall Climbs</h5>
-						<div class="font-TWK">
-							Experience the life-sized Snake and Ladders: Uniting educators for team-building and
-							fun! Gather with excitement area as participants embark on this adventure. Engage in
-							friendly competition, strengthen bonds, and enjoy the larger-than-life board and dice!
-						</div>
-						<div class="small-text">by Dr. Arulalan Rajan</div> 
-					</div>
-				</div> -->
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">O1:3OPM ONWARDS</h4>
-					<div class="rows gap-0-75x">
-						<h5>Codeverse</h5>
-						<div class="font-TWK">
-							Embark on the Coding Challenge 2024: Tackle 10 coding problems in 3 hours. Form teams
-							of three with one computer each. The team solving the most questions claims victory,
-							with runners-up awarded 2nd and 3rd place. Limited to 15 teams.
-						</div>
-						<!-- <div class="small-text">by Laura Davis</div> -->
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading !text-center sm:!text-left">O4:00 - O8:45pm</h4>
-					<div class="rows gap-0-75x">
-						<h4 class="medium-heading !uppercase !text-center !text-[2.2rem] sm:!text-[2.8rem]">
-							Closing ceremony
-						</h4>
-						<!-- <div class="small-text">by ken maskall</div> -->
-					</div>
-				</div>
-
-				<div class="columns schedule-column border-l-2 border-dashed sm:border-l-0">
-					<h4 class="medium-heading !text-[1.7rem] sm:!text-[2rem] !text-center">
-						O4:00 - O4:3Opm
-					</h4>
-					<div class="rows gap-0-75x">
-						<h5
-							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-center"
-						>
-							Prize distribution
-						</h5>
-						<!-- <div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
-						</div> -->
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
-					</div>
-				</div>
-
-				<div class="columns schedule-column border-l-2 border-dashed sm:border-l-0">
-					<h4 class="medium-heading !text-[1.7rem] sm:!text-[2rem] !text-center">
-						O4:3O - O8:45pm
-					</h4>
-					<div class="rows gap-0-75x">
-						<h5
-							class="!uppercase !-mt-[0.4rem] !text-[1.8rem] sm:!text-[2rem] !text-center sm:!text-center"
-						>
-							Movie screening
-						</h5>
-						<!-- <div class="font-TWK">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo quaerat maiores
-							accusantium aut? Quibusdam mollitia possimus nam aperiam illo itaque nemo distinctio
-							sequi eos est? Aliquam exercitationem fugiat voluptate.
-						</div> -->
-						<!-- <div class="small-text">by Dr. Arulalan Rajan</div> -->
-					</div>
-				</div>
+				
 				<div class="horizontal-line"></div>
 			</div>
 		</div>
