@@ -54,7 +54,7 @@
 					<div class="rows gap-0-75x">
 						<h5>App Development workshop</h5>
 						<!-- <div class="font-TWK">
-							A hands-on app development workshop focused on cross-platform app development using Flutter conducted by ACM SIGSOFT.
+							A hands-on app development workshop focused on cross-platform app development using Flutter conducted by ACM SIGSOFT
 						</div> -->
 						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
@@ -65,26 +65,11 @@
 					<div class="rows gap-0-75x">
 						<h5>Just a Minute</h5>
 						<div class="font-TWK">
-							This event will challenge participants to think on their feet and deliver concise, engaging presentations on a variety of topics conducted by APEX.
+							Join us for some E-gaming extravaganza! With Clash Royale, Valorant and more
 						</div>
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
 				</div>
-				<div class="horizontal-line"></div>
-				<!--<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
-					<div class="rows gap-0-75x">
-						<h5 class=" uppercase">Speaker session</h5>
-						<div class=" font-TWK">
-							Presented by renowned AI leader Ken Maskall, followed by insightful panel discussions
-							and workshops focused on AI ethics, responsible innovation, and the integration of
-							artificial intelligence in various industries.
-						</div>
-						<div class="small-text">by Ashish Burade</div>
-					</div>
-				</div> -->
-				<!--<div class="horizontal-line"></div>-->
-				<div class="columns schedule-column">
 			</div>
 		</div>
 	</div>
