@@ -6,7 +6,6 @@
 <div class="content-wrapper">
 	<div class="horizontal-line"></div>
 	<div class="container-main">
-		<!-- Schedule Heading -->
 		<div class="section-inner grid-title">
 			<h4 class="large-heading font-basebornSans">Schedule</h4>
 			<div class="vertical-line"></div>
@@ -68,9 +67,9 @@
 		<div class="section-inner has-title">
 			<div class="title-wrapper">
 				<div class="title-graphic">
-					<div class="vertical-line"></div>
-					<div class="vertical-line"></div>
-					<div class="vertical-line"></div>
+					<div class="vertical-line title-line"></div>
+					<div class="vertical-line title-line"></div>
+					<div class="vertical-line title-line"></div>
 					<div class="title">
 						<div class="title-graphic-text-wrapper">
 							<div class="title-graphic-text">Schedule</div>
@@ -117,9 +116,9 @@
 		<div class="section-inner has-title">
 			<div class="title-wrapper">
 				<div class="title-graphic">
-					<div class="vertical-line"></div>
-					<div class="vertical-line"></div>
-					<div class="vertical-line"></div>
+					<div class="vertical-line title-line"></div>
+					<div class="vertical-line title-line"></div>
+					<div class="vertical-line title-line"></div>
 					<div class="title">
 						<div class="title-graphic-text-wrapper">
 							<div class="title-graphic-text">Schedule</div>
@@ -172,8 +171,8 @@
 			<div class="sponsor-wrapper">
 				<h4 class="text-3xl text-onPrimaryContainer uppercase">Our Sponsors</h4>
 				<div class="sponsors">
-					<img src={connectLogo} alt="Sponsor 1" class="sponsor-logo" />
-					<img src={NSSLogo} alt="Sponsor 2" class="sponsor-logo" />
+					<img src={connectLogo} alt="ConnectEd Sponsor Logo" class="sponsor-logo" />
+					<img src={NSSLogo} alt="NSS Sponsor Logo" class="sponsor-logo" />
 				</div>
 			</div>
 			<div class="cta-action">
@@ -187,41 +186,3 @@
 	</section>
 	<div class="horizontal-line"></div>
 </div>
-
-<style>
-	/* Add improved styles for structure and readability */
-	.horizontal-line {
-		height: 1px;
-		background: #ccc;
-	}
-	.vertical-line {
-		width: 1px;
-		background: #ccc;
-	}
-	.large-heading {
-		font-size: 2rem;
-		font-weight: bold;
-	}
-	.sponsor-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 2rem 0;
-	}
-	.sponsor-logo {
-		width: 100px;
-		height: auto;
-		margin: 1rem;
-	}
-	.fancy-button {
-		border: 2px solid #000;
-		padding: 1rem 2rem;
-		text-decoration: none;
-		font-weight: bold;
-		transition: all 0.3s ease;
-	}
-	.fancy-button:hover {
-		background: #000;
-		color: #fff;
-	}
-</style>
