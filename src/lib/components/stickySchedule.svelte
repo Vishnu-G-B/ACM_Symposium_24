@@ -142,7 +142,6 @@
 							event aims to provide a platform for students to learn from industry experts
 							and gain insights into cutting-edge technologies.
 						</div>
-						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
 				</div>
 			</div>
