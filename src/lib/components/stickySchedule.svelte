@@ -65,7 +65,20 @@
 					<div class="rows gap-0-75x">
 						<h5>Just a Minute</h5>
 						<div class="font-TWK">
-							Join us for some E-gaming extravaganza! With Clash Royale, Valorant and more
+							This event will challenge participants to think on their feet and deliver
+							concise, engaging presentations on a variety of topics.
+						</div>
+						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
+					<h4 class="medium-heading">3:3Opm - 5:0Opm</h4>
+					<div class="rows gap-0-75x">
+						<h5>Panel discussion conducted by ACM SIGAI</h5>
+						<div class="font-TWK">
+							This event will challenge participants to think on their feet and deliver
+							concise, engaging presentations on a variety of topics.
 						</div>
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
