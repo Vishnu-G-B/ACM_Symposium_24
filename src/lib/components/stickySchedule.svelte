@@ -109,25 +109,26 @@
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 6:0Opm</h4>
+					<h4 class="medium-heading">10:0Opm - 12:0Oam</h4>
 					<div class="rows gap-0-75x">
-						<h5>Trade Sphere - Prelims</h5>
+						<h5>ACM Eminent Speaker Talk </h5>
 						<div class="font-TWK">
-							Experience TradeSphere Event 2024: where business acumen meets diplomatic finesse.
-							Engage in company auctions and a Corporate Summit representing companies, not
-							countries!
+							An Eminent Speaker Talk hosted by the ACM Women student chapter. This
+							event aims to provide a platform for students to learn from industry experts
+							and gain insights into cutting-edge technologies.
 						</div>
 						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:0O - 7:0Opm</h4>
+					<h4 class="medium-heading">12:0Opm - 01:3Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>E-Gaming</h5>
+						<h5>Quiz on Tech</h5>
 						<div class="font-TWK">
-							Join us for some E-gaming extravaganza! With Clash Royale, Valorant and more
-						</div>
+						A Tech Quiz conducted by APEXWomen. This event will test participants'
+						knowledge of various technology topics, including programming, data
+						structures, algorithms, and computer networks.						</div>
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
 				</div>
