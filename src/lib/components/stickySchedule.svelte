@@ -183,29 +183,17 @@ that they must debug and execute in the shortest possible time to win conducted 
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
+					<h4 class="medium-heading">9:0Oam - 12:0Opm</h4>
+					<h4 class="medium-heading">2:0Opm - 4:0Opm</h4>
+
 					<div class="rows gap-0-75x">
-						<h5>Bears vs Bulls</h5>
+						<h5>Poster Presentation</h5>
 						<div class="font-TWK">
-							Join the Stock Trading Challenge for an adrenaline-fueled day of trading and strategy.
-							Network with peers, refine your skills, and conquer the challenge! Don't miss the
-							D-Street Game, The Bear vs Bull Challenge, your gateway to Dalal Street's finance
-							world.
+							We propose a poster presentation event focused on Cyber Security and IT &
+Data Science. This event will provide a platform for students and researchers
+to showcase their innovative ideas and research findings.
 						</div>
 						<!-- <div class="small-text">by ken maskall</div> -->
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">4:3O - 5:3Opm</h4>
-					<div class="rows gap-0-75x">
-						<h5>Trade Sphere - Finals</h5>
-						<div class="font-TWK">
-							Experience TradeSphere Event 2024: where business acumen meets diplomatic finesse.
-							Engage in company auctions and a Corporate Summit representing companies, not
-							countries!
-						</div>
-						<!-- <div class="small-text">by Laura Davis</div> -->
 					</div>
 				</div>
 			</div>
@@ -250,10 +238,7 @@ that they must debug and execute in the shortest possible time to win conducted 
 						text-3xl Smobile:text-3xl Mmobile:text-3xl lg:text-4xl uppercase">
 							Our Sponsors
 						</div>
-						<div class="w-full h-full flex lg:flex-col justify-evenly lg:justify-center items-center">
-							<img src={connectLogo} alt="sponsor 1" class="w-[50vw] Mmobile:w-[50vw] lg:w-[30vw] h-auto object-contain" />
-							<img src={NSSLogo} alt="sponsor 2" class="w-[30vw] Mmobile:w-[30vw] lg:w-[14vw] h-auto object-contain" />
-						</div>
+				
 					</div>
 				</div>
 				<div class="container---xs">
