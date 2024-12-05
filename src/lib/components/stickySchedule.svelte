@@ -109,7 +109,7 @@
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:0Opm - 12:0Oam</h4>
+					<h4 class="medium-heading">10:0Oam - 12:0Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>ACM Eminent Speaker Talk </h5>
 						<div class="font-TWK">
