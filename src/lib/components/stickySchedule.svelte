@@ -50,18 +50,18 @@
 				</div> -->
 				<!--<div class="horizontal-line"></div>-->
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:0Oam - 1:0Opm</h4>
+					<h4 class="medium-heading">10:0Oam - 12:0Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>App Development workshop</h5>
+						<h5>ACM Eminent Speaker Talk</h5>
 						<div class="font-TWK">
-							A hands-on app development workshop focused on cross-platform app development using Flutter conducted by ACM SIGSOFT
+							An Eminent Speaker Talk hosted by the ACM Women student chapter. This event aims to provide a platform for students to learn from industry experts and gain insights into cutting-edge technologies.
 						</div>
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">2:0Opm - 3:3Opm</h4>
+					<h4 class="medium-heading">2:0Opm - 3:0Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Just a Minute</h5>
 						<div class="font-TWK">
@@ -73,7 +73,7 @@
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">3:3Opm - 5:0Opm</h4>
+					<h4 class="medium-heading">3:0Opm - 4:3Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Panel discussion conducted by ACM SIGAI</h5>
 						<div class="font-TWK">
@@ -109,13 +109,11 @@
 			<div class="rows gap-1x">
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">10:0Oam - 12:0Opm</h4>
+					<h4 class="medium-heading">10:0Oam - 1:0Opm</h4>
 					<div class="rows gap-0-75x">
-						<h5>ACM Eminent Speaker Talk </h5>
+						<h5>App Development workshop </h5>
 						<div class="font-TWK">
-							An Eminent Speaker Talk hosted by the ACM Women student chapter. This
-							event aims to provide a platform for students to learn from industry experts
-							and gain insights into cutting-edge technologies.
+							A hands-on app development workshop focused on cross-platform app development using Flutter conducted by ACM SIGSOFT
 						</div>
 						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
