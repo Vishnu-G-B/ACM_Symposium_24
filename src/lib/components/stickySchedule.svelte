@@ -65,8 +65,7 @@
 					<div class="rows gap-0-75x">
 						<h5>Just a Minute</h5>
 						<div class="font-TWK">
-							This event will challenge participants to think on their feet and deliver
-							concise, engaging presentations on a variety of topics.
+							Organised by APEX
 						</div>
 						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
 					</div>
