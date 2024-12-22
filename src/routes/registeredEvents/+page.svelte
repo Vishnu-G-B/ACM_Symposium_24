@@ -465,7 +465,7 @@
 				<div class=" w-full h-fit text-center flex-col justify-center items-center">
 					<h3 class="text-3xl font-bold mt-8 mb-4">Not Paid yet?</h3>
 					<div class="w-full h-fit flex justify-center items-center">
-						<LightButton link="https://forms.gle/q6yKKKqmM7VFvqBS7" buttonText="Pay Now!" />
+						<LightButton link="https://payment.manipal.edu/tesellate-Login" buttonText="Pay Now!" />
 					</div>
 				</div>
 			</div>

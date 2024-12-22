@@ -79,7 +79,7 @@ export const actions = {
                         { email: userEmail },
                         { $set: { paymentstatus: "processing" } }
                     )
-                    throw redirect(303, "https://forms.gle/q6yKKKqmM7VFvqBS7");
+                    throw redirect(303, "https://payment.manipal.edu/tesellate-Login");
                 }
             } else {
                 console.log("i dunno wtf happened here, and i hope to never find out");
