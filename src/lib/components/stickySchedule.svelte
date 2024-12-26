@@ -61,6 +61,18 @@
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
+					<h4 class="medium-heading">12:0Opm - 01:0Opm</h4>
+					<div class="rows gap-0-75x">
+						<h5>Quiz on Tech</h5>
+						<div class="font-TWK">
+						A Tech Quiz conducted by APEXWomen. This event will test participants'
+						knowledge of various technology topics, including programming, data
+						structures, algorithms, and computer networks.						</div>
+						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
+					</div>
+				</div>
+				<div class="horizontal-line"></div>
+				<div class="columns schedule-column">
 					<h4 class="medium-heading">2:0Opm - 3:0Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Just a Minute</h5>
@@ -117,21 +129,10 @@
 						<!-- <div class="small-text">by ken maskall</div> -->
 					</div>
 				</div>
+				
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">12:0Opm - 01:3Opm</h4>
-					<div class="rows gap-0-75x">
-						<h5>Quiz on Tech</h5>
-						<div class="font-TWK">
-						A Tech Quiz conducted by APEXWomen. This event will test participants'
-						knowledge of various technology topics, including programming, data
-						structures, algorithms, and computer networks.						</div>
-						<!--<div class="smallJoin us for some E-gaming extravaganza! With Clash Royale, Valorant and more">by Laura Davis</div>-->
-					</div>
-				</div>
-				<div class="horizontal-line"></div>
-				<div class="columns schedule-column">
-					<h4 class="medium-heading">01:0Opm - 02:3Opm</h4>
+					<h4 class="medium-heading">01:3Opm - 03:0Opm</h4>
 					<div class="rows gap-0-75x">
 						<h5>Squid Game </h5>
 						<div class="font-TWK">
@@ -142,8 +143,8 @@
 				</div>
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
-					<h4 class="medium-heading">04:0Opm - 04:3Opm</h4>
-					<h4 class="medium-heading">04:45pm - 05:3Opm</h4>
+					<h4 class="medium-heading">04:3Opm - 04:3Opm</h4>
+					<h4 class="medium-heading">04:35pm - 05:0Opm</h4>
 
 					<div class="rows gap-0-75x">
 						<h5>Debug Marathon </h5>
@@ -181,7 +182,7 @@ that they must debug and execute in the shortest possible time to win conducted 
 				<div class="horizontal-line"></div>
 				<div class="columns schedule-column">
 					<h4 class="medium-heading">9:0Oam - 12:0Opm</h4>
-					<h4 class="medium-heading">2:0Opm - 4:0Opm</h4>
+					<h4 class="medium-heading">3:0Opm - 4:0Opm</h4>
 
 					<div class="rows gap-0-75x">
 						<h5>Poster Presentation</h5>
